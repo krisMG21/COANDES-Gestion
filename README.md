@@ -26,9 +26,13 @@ opciones, hear me out:
        - Componentes del proyecto
        - Herramientas en uso
       
-(Si la primera vemos que la gestionamos con Jira mejor, lo hacemos de la segunda
-forma o una tercera, como veáis)
+   (Si la primera vemos que la gestionamos con Jira mejor, lo hacemos de la segunda
+   forma o una tercera, como veáis)
 ---
 
-💡 **Nota**: Abierto a cambios según las necesidades que tengamos
+## 💡 Buenas prácticas (perfectamente ignorables)
+En plan, son cosas generales al trabajar con github que suelen rentar, just saying:
+
+* Un commit por cada mini objetivo, un push por cada sesión
+* Descripciones breves de los commits, a menos que el nombre del commit se entienda por si solo
 
