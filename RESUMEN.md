@@ -80,5 +80,3 @@ ELEM <id><nombre><direccion>
 ```xml
 DEP <id><id>
 ```
-
-
