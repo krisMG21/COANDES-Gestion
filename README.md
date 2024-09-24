@@ -36,3 +36,7 @@ En plan, son cosas generales al trabajar con github que suelen rentar, just sayi
 * Un commit por cada mini objetivo, un push por cada sesión
 * Descripciones breves de los commits, a menos que el nombre del commit se entienda por si solo
 
+## Contribuidores
+<a href="https://github.com/krisMG21/COANDES-Gestion/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=krisMG21/COANDES-Gestion" />
+</a>
