@@ -28,18 +28,21 @@ y varios aspectos técnicos a destacar.
 ### COANDES
   
 * Resp. comercial:
-  * Gestión de clientes
-  * Recepción de ficheros XML de aplicaciones
+  * Gestión de clientes, cada cliente tiene un responsable
+  comercial asociado
+  * Recepción y carga de ficheros XML de aplicaciones
 * Resp. técnico:
   * Gestión del proyecto: Datos del proyecto, tiempo estimado
   y tiempo real diariamente
   * Carga de ficheros XML
   * Asignación de prioridades a peticiones
 * Personal técnico:
-  * Ejecición de tareas
+  * Ejecución de tareas
   * Registro de horas trabajadas
 * Jefes de Departamento (Personal, Técnico, Comercial):
-  * Acceso a informes específicos
+  * Acceso a todos los datos de esfuerzo (C,T)
+  * Carga mensual de recursos (P,T), pdf por correo o consulta online
+  * Acceso a resultados económicos de los proyectos (C,T)
 
 ## Componentes
 
@@ -80,3 +83,6 @@ ELEM <id><nombre><direccion>
 ```xml
 DEP <id><id>
 ```
+
+Estos ficheros se cargan de forma manual desde el correo, cuya carga
+genera un fichero ```log``` con el resultado del proceso.
