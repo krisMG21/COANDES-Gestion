@@ -86,3 +86,49 @@ DEP <id><id>
 
 Estos ficheros se cargan de forma manual desde el correo, cuya carga
 genera un fichero ```log``` con el resultado del proceso.
+
+## Resumen (continuación)
+
+El sistema también debe gestionar las peticiones de mantenimiento realizadas por los usuarios de las aplicaciones. Estas peticiones pueden ser de diferentes tipos y urgencias, y siguen un flujo de estados desde su recepción hasta su finalización.
+
+Se requiere un control detallado de las tareas asociadas a cada petición, incluyendo la asignación de personal, estimación de tiempo y registro de horas trabajadas.
+
+El sistema debe proporcionar información estadística sobre el esfuerzo dedicado a proyectos, aplicaciones y peticiones, así como la carga de trabajo del personal y los resultados económicos de los proyectos.
+
+## Principales objetos del sistema
+
+### Usuario
+- Tipos: Cliente (Responsable de Aplicación, Usuario normal), Personal COANDES (Responsable comercial, Responsable técnico, Personal técnico, Jefes de Departamento)
+- Atributos: Nombre, tipo de usuario, información de contacto (teléfono, email, departamento)
+- Para personal COANDES: categoría, coste por hora
+
+### Cliente
+- Atributos: Nombre de la empresa, responsable comercial asignado
+
+### Proyecto
+- Atributos: Cliente asociado, responsable técnico, precio total, fecha de inicio, fecha de fin, tiempo estimado, tiempo real
+- Relaciones: Aplicaciones asociadas
+
+### Aplicación
+- Atributos: Nombre, proyecto asociado, usuario responsable
+- Relaciones: Elementos de software, usuarios
+
+### Elemento de Software
+- Atributos: ID, nombre, dirección de almacenamiento, tipo (programa, datos, documentación)
+- Relaciones: Dependencias con otros elementos
+
+### Petición de Mantenimiento
+- Atributos: Descripción, urgencia, tipo (correctivo, adaptativo, perfectivo, evolutivo), prioridad, complejidad, estado, fechas (recepción, inicio estudio, inicio prevista ejecución, inicio real ejecución y aceptación)
+- Relaciones: Aplicación asociada, usuario solicitante, responsable COANDES, tareas asociadas
+
+### Tarea
+- Atributos: Fecha inicio, fecha fin, tipo (análisis, prueba unitaria, codificación), elemento asociado
+- Relaciones: Petición asociada, personal asignado
+
+### Departamento
+- Tipos: Personal, Técnico, Comercial
+- Atributos: Nombre, jefe del departamento
+
+### Informe Estadístico
+- Tipos: Esfuerzo por proyecto/aplicación/petición; Carga mensual; Resultados económicos.
+- Atributos: Tipo informe; período; datos específicos según tipo
