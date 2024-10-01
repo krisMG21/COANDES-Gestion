@@ -9,7 +9,7 @@ Se necesita llevar control de las empresas clientes y
 los proyectos asociados y las aplicaciones que lo conformen.
 
 El sistema debe controlar clientes, proyectos, aplicaciones,
-peticiones de mantenimiento y asignación de tares.
+peticiones de mantenimiento y asignación de tareas.
 
 Existen una serie de puestos que pueden interactuar con el
 sistema, unos requerimientos funcionales que deben cumplirse
@@ -52,7 +52,7 @@ Cada proyecto tiene asociado un **precio total**, una
 **fecha de inicio** y una **fecha de finalización**, así como
 el **tiempo estimado** y el **tiempo real** de realización.
 
-Cada proyecto se compone de aplicaciones
+Cada proyecto se compone de aplicaciones.
 
 ### Aplicación
 
@@ -64,11 +64,11 @@ un **código de identificación** y el **tipo de elemento** que es.
 
 Los elementos tienen dependencias entre sí:
 
-* Un programa es llamado por / puede llamar a otros
-* Puede usar o no datos
-* Un dato se usa minimo por un programa
-* Un documento puede referirse a programa, dato o aplicación
-* Puede haber varios documentos asociados a cada uno
+* Un programa es llamado por / puede llamar a otros.
+* Puede usar o no datos.
+* Un dato se usa mínimo por un programa.
+* Un documento puede referirse a programa, dato o aplicación.
+* Puede haber varios documentos asociados a cada uno.
 
 La información de los elementos de cada app se envían a través de ficheros XML:
 
@@ -76,13 +76,3 @@ La información de los elementos de cada app se envían a través de ficheros XM
 
 ```xml
 ELEM <id><nombre><direccion>
-```
-
-* Dependencias: DEP
-
-```xml
-DEP <id><id>
-```
-
-Estos ficheros se cargan de forma manual desde el correo, cuya carga
-genera un fichero ```log``` con el resultado del proceso.
