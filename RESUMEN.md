@@ -76,3 +76,13 @@ La información de los elementos de cada app se envían a través de ficheros XM
 
 ```xml
 ELEM <id><nombre><direccion>
+```
+
+* Dependencias: DEP
+
+```xml
+DEP <id><id>
+```
+
+Estos ficheros se cargan de forma manual desde el correo, cuya carga
+genera un fichero ```log``` con el resultado del proceso.
