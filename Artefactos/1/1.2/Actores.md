@@ -9,7 +9,7 @@ Los comercianles seran los pincipales empleados de coandes que traten con el cli
 - Almacenar esta informacion y avisar al responsable tecnico del proyecto para que la cargue en el sistema.
 
 
-Aquel comercial que sea jefe del departamento comercial, podra consultar los datos sobre el esfuerzo de los empleados y los resutados económicos de los proyectos.
+El jefe de departamento comercial podra consultar los datos sobre el esfuerzo de los empleados y los resutados económicos de los proyectos.
 
 
 ### Usuarios
@@ -32,12 +32,7 @@ Los técnicos pueden hacer una o varias de las siguientes tareas a la vez:
 - Realizar tareas asignadas dentro de peticiones.
 - Todos los días introducen el tiempo real que han dedicado a una aplicación, petición o tarea.
 
-Un técnico puede ser un jefe, cuyas funciones serían:
-
-- Consulta las estadísticas sobre el esfuerzo.
-- Consulta la carga mensual de recursos.
-- Consulta de resultados económicos.
-
+El jefe de departamento técnico prodra consultar las estadisticas sobre el esfuerzo, la carga mensual de recursos y los resultados economicos de los proyectos.
 
 ### Personal
 
