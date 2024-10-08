@@ -44,12 +44,14 @@ siempre un fichero log con el resultado del proceso (éxito o lista de errores).
 - **Funciones automatizadas:**
   - **Req(14)** El sistema cada día actualizará la lista de peticiones (no urgentes) automáticamente y se enviará al responsable del proyecto.
 
-- **Decisión sobre las peticiones**
+- **Decisión sobre las peticiones:**
   - **Req(15)** El responsable de la petición tiene la posibilidad de rechazar o aceptar una petición.
 
-- **Detalles de la petición**
+- **Detalles de la petición:**
   - **Req(16) Depende de Req(15)** En caso de que la petición sea acpetada, se le asigna una fecha de inicio de ejecución y se le cambiará el estado a pendiente, una vez iniciada la ejecución, pasará a estado en desarrollo, y el usuario responsable de la aplicación la acepte y pase a terminada.
 
-- **Generación de lista de elementos**
-  - **El sistema generará una lista de elementos que tiene alguna relación de dependencia con los elementos de la lista inicial apetición del responsable**
+- **Generación de lista de elementos:**
+  - **Req(17)** El sistema generará una lista de elementos que tiene alguna relación de dependencia con los elementos de la lista inicial a petición del responsable
  
+- **Asignación de tareas:**
+  - **Req(18)** Responsable de la petición asigna tareas a una o varias personas para llevarla a cabo .
