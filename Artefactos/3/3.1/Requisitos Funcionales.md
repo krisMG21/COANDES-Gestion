@@ -4,19 +4,21 @@
   - **Req(01)** El responsable comercial de COANDES puede atender a las empresas clientes, creando, modificando y verificando sus datos.
 
 - **Gestión de proyectos:**
-  - **Req(02)** El responsable técnico podrá crear y gestionar los proyectos, introduciendo datos como el precio, fechas, tiempo estimado de trabajo y aplicaciones involucradas.
+  - **Req(02)** El responsable técnico podrá crear y gestionar los proyectos, introduciendo datos como el precio, fechas, tiempo estimado de trabajo y aplicaciones involucradas, y podrá agrupar destinitas aplicaciones en un mismo proyecto.
 
 - **Gestión de elementos y aplicaciones software:**
   - **Req(03)** El responsable técnico gestionará las aplicaciones de los clientes y sus elementos de software, incluyendo acciones como: la creación, modificación y eliminación de programas, datos y documentos asociados.
 
 - **Carga y procesamiento de los archivos XML:**
-  - **Req(04)** El responsable del proyecto podrá cargar archivos XML con detalles sobre las elementos software y dependencias, generando un fichero log con el resultado.
+  - **Req(04)** El comercial almacena los ficheros desde el correo electrónico y 
+avisa al responsable del proyecto que se encargará de cargarlos en el sistema. La carga genera 
+siempre un fichero log con el resultado del proceso (éxito o lista de errores).
 
 - **Gestión de peticiones de mantenimiento:**
   - **Req(05)** Los usuarios de las aplicaciones pueden enviar peticiones de reparación correctiva, mientras que el responsable de cada aplicación podrá hacer también peticiones adaptativas, perfectivas y evolutivas.
 
 - **Asignación de responsable para la petición:**
-  - **Req(06)** El responsable asignado al proyecto se encargará de las peticiones recibidas, decidiendo su prioridad, tipo, complejidad, y le asigna un responsable para resolverla.
+  - **Req(06)** El responsable asignado al proyecto se encargará de las peticiones recibidas, indicando su prioridad, tipo, complejidad, y le asigna un responsable para resolverla.
 
 - **Seguimiento del estado de las peticiones:**
   - **Req(07)** Los usuarios responsables de cada aplicación podrán consultar el estado de las peticiones realizadas sobre dicha aplicación, mientras que cada usuario normal podrá ver, modificar o eliminar sus propias peticiones con el estado “recibidas”.
@@ -41,3 +43,13 @@
  
 - **Funciones automatizadas:**
   - **Req(14)** El sistema cada día actualizará la lista de peticiones (no urgentes) automáticamente y se enviará al responsable del proyecto.
+
+- **Decisión sobre las peticiones**
+  - **Req(15)** El responsable de la petición tiene la posibilidad de rechazar o aceptar una petición.
+
+- **Detalles de la petición**
+  - **Req(16) Depende de Req(15)** En caso de que la petición sea acpetada, se le asigna una fecha de inicio de ejecución y se le cambiará el estado a pendiente, una vez iniciada la ejecución, pasará a estado en desarrollo, y el usuario responsable de la aplicación la acepte y pase a terminada.
+
+- **Generación de lista de elementos**
+  - **El sistema generará una lista de elementos que tiene alguna relación de dependencia con los elementos de la lista inicial apetición del responsable**
+ 
