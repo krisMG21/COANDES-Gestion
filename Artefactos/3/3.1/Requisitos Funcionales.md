@@ -38,3 +38,6 @@
 
 - **Funciones críticas:**
   - **Req(13)** Los responsables técnicos podrán realizar acciones críticas como la carga de ficheros XML, borrar usuarios cliente, modificar elementos de software y generar tareas asociadas a las peticiones.
+ 
+- **Funciones automatizadas:**
+  - **Req(14)** El sistema cada día actualizará la lista de peticiones (no urgentes) automáticamente y se enviará al responsable del proyecto.
