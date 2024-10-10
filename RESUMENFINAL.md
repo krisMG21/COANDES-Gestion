@@ -2,18 +2,18 @@
 
 ## Indice
 
-*[Resumen](#resumen)
-*[Actores](#actores)
-*[Componentes](#componentes)
-*[Principales objetos del sistema](#principales*objetos*del*sistema)
-*[Requerimientos Funcionales](#requerimientos*funcionales)
-*[Requerimientos No Funcionales](#requerimientos*no*funcionales)
-*[Procesos del Sistema](#procesos*del*sistema)
-*[Aspectos Técnicos](#aspectos*técnicos)
-*[Consideraciones Adicionales](#consideraciones*adicionales)
-*[Datos de la Empresa y Volumen de Trabajo](#datos*de*la*empresa*y*volumen*de*trabajo)
-*[Infraestructura Actual](#infraestructura*actual)
-*[Objetivos Estratégicos](#objetivos*estratégicos)
+* [Resumen](#resumen)
+* [Actores](#actores)
+* [Componentes](#componentes)
+* [Principales objetos del sistema](#principales-objetos-del-sistema)
+* [Requerimientos Funcionales](#requerimientos-funcionales)
+* [Requerimientos No Funcionales](#requerimientos-no-funcionales)
+* [Procesos del Sistema](#procesos-del-sistema)
+* [Aspectos Técnicos](#aspectos-técnicos)
+* [Consideraciones Adicionales](#consideraciones-adicionales)
+* [Datos de la Empresa y Volumen de Trabajo](#datos-de-la-empresa-y-volumen-de-trabajo)
+* [Infraestructura Actual](#infraestructura-actual)
+* [Objetivos Estratégicos](#objetivos-estratégicos)
 
 ## Resumen
 
