@@ -1,6 +1,7 @@
 # 🏗️ COANDES-Gestion
 
-> Repositorio para sincronizar y coordinar la práctica de IngSW Avanzada, aunque no haya código
+> Repositorio para sincronizar y coordinar la práctica de IngSW Avanzada,
+> tanto documentación como proyectos (Modelio, datamodeler)
 
 ---
 
