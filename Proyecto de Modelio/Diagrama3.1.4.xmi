@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:default="http:///schemas/default/_uIjWEIrUEe-GVpfl29_lIA/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/default/_uIjWEIrUEe-GVpfl29_lIA/0 default.profile.xmi#_uJkpx4rUEe-GVpfl29_lIA">
+  <uml:Model xmi:id="_uIXv4IrUEe-GVpfl29_lIA" name="cu1swav">
+    <eAnnotations xmi:id="_uIXv4YrUEe-GVpfl29_lIA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_uIXv4orUEe-GVpfl29_lIA" name="exporterVersion">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_uIXv44rUEe-GVpfl29_lIA" value="3.0.0"/>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_uIXv5IrUEe-GVpfl29_lIA" name="Sistema"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXv5YrUEe-GVpfl29_lIA" memberEnd="_uIXv5orUEe-GVpfl29_lIA _uIXv6IrUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXv5orUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXv5orUEe-GVpfl29_lIA" visibility="public" type="_uIXv_orUEe-GVpfl29_lIA" isUnique="false" association="_uIXv5YrUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv54rUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXv6IrUEe-GVpfl29_lIA" visibility="public" type="_uIXv5IrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv5YrUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv6YrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXv6orUEe-GVpfl29_lIA" memberEnd="_uIXv64rUEe-GVpfl29_lIA _uIXv7YrUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXv64rUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXv64rUEe-GVpfl29_lIA" visibility="public" type="_uIXwCIrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv6orUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv7IrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXv7YrUEe-GVpfl29_lIA" visibility="public" type="_uIXv5IrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv6orUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv7orUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXv74rUEe-GVpfl29_lIA" memberEnd="_uIXv8IrUEe-GVpfl29_lIA _uIXv8orUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXv8IrUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXv8IrUEe-GVpfl29_lIA" visibility="public" type="_uIXwE4rUEe-GVpfl29_lIA" isUnique="false" association="_uIXv74rUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv8YrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXv8orUEe-GVpfl29_lIA" visibility="public" type="_uIXv5IrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv74rUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv84rUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXv9IrUEe-GVpfl29_lIA" memberEnd="_uIXv9YrUEe-GVpfl29_lIA _uIXv94rUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXv9YrUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXv9YrUEe-GVpfl29_lIA" visibility="public" type="_uIXwJYrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv9IrUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv9orUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXv94rUEe-GVpfl29_lIA" visibility="public" type="_uIXv5IrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv9IrUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv-IrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXv-YrUEe-GVpfl29_lIA" memberEnd="_uIXv-orUEe-GVpfl29_lIA _uIXv_IrUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXv-orUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXv-orUEe-GVpfl29_lIA" visibility="public" type="_uIXwHYrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv-YrUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv-4rUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXv_IrUEe-GVpfl29_lIA" visibility="public" type="_uIXv5IrUEe-GVpfl29_lIA" isUnique="false" association="_uIXv-YrUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXv_YrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXv_orUEe-GVpfl29_lIA" name="Generar lista de peticiones">
+      <ownedComment xmi:id="_uIXv_4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwAIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwAYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwAorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwA4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwBIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwBYrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwLYrUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwBorUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwNIrUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwB4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwPIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwCIrUEe-GVpfl29_lIA" name="Cambio de estado de una petición">
+      <ownedComment xmi:id="_uIXwCYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwCorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwC4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwDIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwDYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwDorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwD4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwUIrUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwEIrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwWIrUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwEYrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwporUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwEorUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwfIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwE4rUEe-GVpfl29_lIA" name="Generar copias de seguridad">
+      <ownedComment xmi:id="_uIXwFIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwFYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwForUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwF4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwGIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwGYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwGorUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwborUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwG4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwdYrUEe-GVpfl29_lIA"/>
+      <include xmi:id="_uIXwHIrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwfIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwHYrUEe-GVpfl29_lIA" name="Envío por correo de informes de esfuerzo mensual">
+      <ownedComment xmi:id="_uIXwHorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwH4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwIIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwIYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwIorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwI4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwJIrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwkIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwJYrUEe-GVpfl29_lIA" name="Envío por correo de las cargas de trabajo">
+      <ownedComment xmi:id="_uIXwJorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwJ4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwKIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwKYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwKorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwK4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwLIrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwiIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwLYrUEe-GVpfl29_lIA" name="Adquirir peticiones no urgentes">
+      <ownedComment xmi:id="_uIXwLorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwL4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwMIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwMYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwMorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwM4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwNIrUEe-GVpfl29_lIA" name="Organizar peticiones">
+      <ownedComment xmi:id="_uIXwNYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwNorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwN4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwOIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwOYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwOorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwO4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwSYrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwPIrUEe-GVpfl29_lIA" name="Enviar lista de peticiones">
+      <ownedComment xmi:id="_uIXwPYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwPorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwP4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwQIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwQYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwQorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXwQ4rUEe-GVpfl29_lIA" memberEnd="_uIXwRIrUEe-GVpfl29_lIA _uIXwRorUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXwRIrUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXwRIrUEe-GVpfl29_lIA" visibility="public" type="_uIXwSIrUEe-GVpfl29_lIA" isUnique="false" association="_uIXwQ4rUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXwRYrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXwRorUEe-GVpfl29_lIA" visibility="public" type="_uIXwPIrUEe-GVpfl29_lIA" isUnique="false" association="_uIXwQ4rUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXwR4rUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_uIXwSIrUEe-GVpfl29_lIA" name="Responsable de la petición"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwSYrUEe-GVpfl29_lIA" name="Excluir aquellas manualmente organizadas por el responsable">
+      <ownedComment xmi:id="_uIXwSorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwS4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwTIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwTYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwTorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwT4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwUIrUEe-GVpfl29_lIA" name="Cambio de estado a &quot;en desarrollo&quot;">
+      <ownedComment xmi:id="_uIXwUYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwUorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwU4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwVIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwVYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwVorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwV4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwYIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwWIrUEe-GVpfl29_lIA" name="Cambio de estado a &quot;terminado&quot;">
+      <ownedComment xmi:id="_uIXwWYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwWorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwW4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwXIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwXYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwXorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwX4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwZ4rUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwYIrUEe-GVpfl29_lIA" name="Detectar inserción de fecha de inicio">
+      <ownedComment xmi:id="_uIXwYYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwYorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwY4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwZIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwZYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwZorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwZ4rUEe-GVpfl29_lIA" name="Detecta vencimiento de una petición">
+      <ownedComment xmi:id="_uIXwaIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwaYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwaorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwa4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwbIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwbYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwborUEe-GVpfl29_lIA" name="Generar copias de seguridad de BBDD">
+      <ownedComment xmi:id="_uIXwb4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwcIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwcYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwcorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwc4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwdIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwdYrUEe-GVpfl29_lIA" name="Generar copias de seguridad del estado del sistema">
+      <ownedComment xmi:id="_uIXwdorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwd4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXweIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXweYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXweorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwe4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwfIrUEe-GVpfl29_lIA" name="Notificar proceso al responsable">
+      <ownedComment xmi:id="_uIXwfYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwforUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwf4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwgIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwgYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwgorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uIXwg4rUEe-GVpfl29_lIA" memberEnd="_uIXwhIrUEe-GVpfl29_lIA _uIXwhorUEe-GVpfl29_lIA" navigableOwnedEnd="_uIXwhIrUEe-GVpfl29_lIA">
+      <ownedEnd xmi:id="_uIXwhIrUEe-GVpfl29_lIA" visibility="public" type="_uIXwSIrUEe-GVpfl29_lIA" isUnique="false" association="_uIXwg4rUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXwhYrUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_uIXwhorUEe-GVpfl29_lIA" visibility="public" type="_uIXwfIrUEe-GVpfl29_lIA" isUnique="false" association="_uIXwg4rUEe-GVpfl29_lIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIXwh4rUEe-GVpfl29_lIA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwiIrUEe-GVpfl29_lIA" name="Generación del arhcivo PDF con cargas de trabajo">
+      <ownedComment xmi:id="_uIXwiYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwiorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwi4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwjIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwjYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwjorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwj4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwn4rUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwkIrUEe-GVpfl29_lIA" name="Generación del arhcivo PDF con esfuerzos mensaules de los usuarios del proyecto">
+      <ownedComment xmi:id="_uIXwkYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwkorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwk4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwlIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwlYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwlorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwl4rUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwmIrUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwmIrUEe-GVpfl29_lIA" name="Comparar horas cargadas por el usuario y el responsable del proyecto">
+      <ownedComment xmi:id="_uIXwmYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwmorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwm4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwnIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwnYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwnorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwn4rUEe-GVpfl29_lIA" name="Obtención de cargas de trabajo">
+      <ownedComment xmi:id="_uIXwoIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwoYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwoorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwo4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwpIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwpYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwporUEe-GVpfl29_lIA" name="Cambio estado a &quot;pendiente&quot;">
+      <ownedComment xmi:id="_uIXwp4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwqIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwqYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwqorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwq4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwrIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_uIXwrYrUEe-GVpfl29_lIA" name="UseCaseDependency" addition="_uIXwrorUEe-GVpfl29_lIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uIXwrorUEe-GVpfl29_lIA" name="Detectar creación de petición">
+      <ownedComment xmi:id="_uIXwr4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwsIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwsYrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwsorUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXws4rUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_uIXwtIrUEe-GVpfl29_lIA">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <profileApplication xmi:id="_uKBVsIrUEe-GVpfl29_lIA">
+      <eAnnotations xmi:id="_uKBVsYrUEe-GVpfl29_lIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="default.profile.xmi#_uJkpx4rUEe-GVpfl29_lIA"/>
+      </eAnnotations>
+      <appliedProfile href="default.profile.xmi#_uJkpwIrUEe-GVpfl29_lIA"/>
+    </profileApplication>
+  </uml:Model>
+  <default:secondary xmi:id="_uKKfoIrUEe-GVpfl29_lIA" base_Actor="_uIXwSIrUEe-GVpfl29_lIA"/>
+</xmi:XMI>
