@@ -12,9 +12,8 @@
   - **RF(05)** Existen dependencias entre elementos: un programa puede llamar y ser llamado por otros, un programa puedo o puede no utilizar datos, cuales pueden o no ser utilizados y los datos, programas y aplicaciones pueden ser asociados a uno o más documentos.
     
 - **Carga y procesamiento de los archivos XML:**
-  - **RF(06)** El comercial almacena los ficheros desde el correo electrónico y 
-avisa al responsable del proyecto que se encargará de cargarlos en el sistema. La carga genera 
-siempre un fichero log con el resultado del proceso (éxito o lista de errores).
+  - **RF(06)** El comercial almacena los ficheros desde el correo electrónico. 
+  - **RF(06.2)** El sistema generará un fichero log con el resultado del proceso (éxito o lista de errores).
   - **RF(07)** Los responsables técnicos podrán realizar acciones críticas como la carga de ficheros XML, borrar usuarios cliente, modificar elementos de software y generar tareas asociadas a las peticiones.
 
 - **Gestión de peticiones de mantenimiento:**
