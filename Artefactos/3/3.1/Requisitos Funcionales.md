@@ -34,11 +34,11 @@ siempre un fichero log con el resultado del proceso (éxito o lista de errores).
 
 - **Tareas del responsable de las peticiones:**
   - **RF(16)** Sobre una petición se han de guardar el estado de la petición, la fecha de inicio esperada, la real y la de recepción.
-  - **RF(17)** El tiempo estimado para una petición es introducida por el repsonsable de la petición.
-  - **RF(18)** El responsable de la petición puede establecer una lista de elementos de la petición. Igualmente el sistema generará, a petición del responsable de la petición, una lista de elementos mediante las relaciones de dependencia.
-  - **RF(19)** El responsable de la petición podrá crear tareas asociadas a uno o varios elementos concretos de dicha petición, definiendo un plazo de realización, asignando personas para su realización y un tipo predefinido.
+  - **RF(17)** El tiempo estimado para una petición es introducida por el repsonsable COANDES de la petición.
+  - **RF(18)** El responsable COANDES de la petición puede establecer una lista de elementos de la petición. Igualmente el sistema generará, a petición del responsable de la petición, una lista de elementos mediante las relaciones de dependencia.
+  - **RF(19)** El responsable COANDES de la petición podrá crear tareas asociadas a uno o varios elementos concretos de dicha petición, definiendo un plazo de realización, asignando personas para su realización y un tipo predefinido.
   - **RF(20)** Los usuarios responsables de cada aplicación podrán consultar el estado de las peticiones realizadas sobre dicha aplicación, mientras que cada usuario normal podrá ver, modificar o eliminar sus propias peticiones con el estado “recibidas”.
-  - **RF(21)** El responsable de la petición puede modificar la lista de elementos y de tarea en cualquier momento.
+  - **RF(21)** El responsable COANDES de la petición puede modificar la lista de elementos y de tarea en cualquier momento.
   
 - **Gestión del personal de COANDES:**
   - **RF(22)** El departamento de personal podrá gestionar/visualizar los datos de los empleados de COANDES, incluyendo su información personal y categoría laboral.
