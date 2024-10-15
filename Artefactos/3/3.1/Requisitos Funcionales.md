@@ -13,7 +13,8 @@
     
 - **Carga y procesamiento de los archivos XML:**
   - **RF(06)** El comercial almacena los ficheros desde el correo electrónico. 
-  - **RF(06.2)** El sistema generará un fichero log con el resultado del proceso (éxito o lista de errores).
+  - **RF(06.1)** El responsable del proyecto se encargará de cargar los ficheros XML en el sistema.
+  - **RF(06.2)** El sistema genera un fichero log con el resultado del proceso (éxito o lista de errores). 
   - **RF(07)** Los responsables técnicos podrán realizar acciones críticas como la carga de ficheros XML, borrar usuarios cliente, modificar elementos de software y generar tareas asociadas a las peticiones.
 
 - **Gestión de peticiones de mantenimiento:**
