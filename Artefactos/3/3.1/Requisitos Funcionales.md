@@ -27,11 +27,10 @@ siempre un fichero log con el resultado del proceso (éxito o lista de errores).
   - **RF(10)** El responsable asignado al proyecto se encargará de las peticiones recibidas, indicando su prioridad, tipo, complejidad, y le asigna un responsable para resolverla.
   - **RF(11)** El sistema cada día actualizará la lista de peticiones (no urgentes) automáticamente y se enviará al responsable del proyecto.
   - **RF(12)** El orden de las peticiones se puede modificar manualmente por el responsable del proyecto. En caso de hacerlo el sistema no ordenará esta petición al formar la lista.
-  - **RF(13)** El responsable de la petición tiene la posibilidad de rechazar o aceptar una petición.
-  - **RF(14)** Una petición pasa a estado pendiente hasta otorgarla una fecha de inicio.
-  - **RF(15.1)** Tras obtener la fecha de inicio, la peticion pasara a estar en desarrollo.
-  - **RF(15.2)** Una peticion se mantendrá en desarrollo hasta que el usuario responsable de la aplicacion decida que la peticion de mantenimiento se ha realizado correctamente, pudiendo aceptar o rechazar las soluciones propuestas por los tecnicos de coandes.
-  - **RF(15.3)** Tras se aceptada la solucion de una peticion por el usuario responsable de la aplicacion, esta pasara a estar terminada.
+  - **RF(13.1)** Una petición pasa a estado pendiente hasta otorgarla una fecha de inicio.
+  - **RF(13.2)** Tras obtener la fecha de inicio, la peticion pasara a estar en desarrollo.
+  - **RF(13.3)** Tras se aceptada la solucion de una peticion por el usuario responsable de la aplicacion, esta pasara a estar terminada.
+  - **RF(14)** Una peticion se mantendrá en desarrollo hasta que el usuario responsable de la aplicacion decida que la peticion de mantenimiento se ha realizado correctamente, pudiendo aceptar o rechazar las soluciones propuestas por los tecnicos de coandes.
 
 - **Tareas del responsable de las peticiones:**
   - **RF(16)** Sobre una petición se han de guardar el estado de la petición, la fecha de inicio esperada, la real y la de recepción.
