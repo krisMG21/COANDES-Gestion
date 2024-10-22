@@ -1,8 +1,9 @@
 # Requisitos no funcionales
 
-
 ### SEGURIDAD
-- **Gestión de roles:** Es esencial implementar un sistema de acceso diferenciado por roles, como responsable técnico, comercial y usuarios del cliente, para proteger la información sensible. 
+
+- **Gestión de roles:** Es esencial implementar un sistema de acceso diferenciado por roles, como responsable técnico, comercial y usuarios del cliente, para proteger la información sensible.
+
 - **Permisos de los roles:** Se tiene que asegurar que los permisos para cada rol son los adecuados, protegen información sensible y no interfieren con la funcionalidad del sistema.
 - **Autenticación y autorización:** Todos los usuarios deberán autenticarse en el sistema y recibir permisos específicos según su rol, asegurando así la confidencialidad de la información.
 - **Cifrado de datos:** Los datos, especialmente los archivos XML y la información de contacto de los usuarios, deben estar cifrados tanto en tránsito como en reposo para garantizar la privacidad.
