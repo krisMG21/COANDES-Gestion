@@ -1,5 +1,24 @@
 # Actores
 
+**Comerciales**
+* [Comercial](#trabajador-del-departamento-comercial)
+* [Jefe Comercial](#jefe-del-departamento-comercial)
+
+**Técnicos**
+* [Técnico](#técnico)
+* [Jefe Técnico](#jefe-del-departamento-técnico)
+* [Responsable de Proyecto](#técnico-responsable-de-proyecto)
+* [Responsable de Petición](#técnico-responsable-de-la-petición)
+
+**Personal**
+* [Personal](#personal)
+* [Jefe Personal](#jefe-del-departamento-personal)
+
+**Clientes**
+* [Usuarios](#usuarios)
+* [Usuarios Resp de App](#usuarios-responsables-de-una-aplicación)
+
+---
 
 ### Trabajador del Departamento Comercial
 
@@ -13,19 +32,6 @@ Los comerciales seran los principales empleados de coandes que traten con el cli
 ### Jefe del Departamento Comercial
 
 El jefe de departamento comercial podra generar y consultar los datos sobre el esfuerzo de los empleados y los resutados económicos de los proyectos.
-
-### Usuarios
-
-Los usuarios son personal del cliente, aquellas personas que utilizaran las aplicaciones que COANDES ofrece y mantiene. Dentro del sistema, estos usuarios tendran las siguientes funciones:
-
-- Realizar peticiones de manteinimiento correctivo ante cualquier fallo identificado durante la utilizacion de alguna de las aplicaciones.
-- Puede asignar si las peticiones que envíe son urgentes o no.
-
-### Usuarios Repsonsables de una Aplicación.
-
-El resposable de aplicacion puede realizar además de peticiones de mantenimiento correctivas, de tipo adaptativo, perfectivo y evolutivo con objeto de mejorar o adaptar el estado actual de la apliacion. Sigue pudiendo indicar si son urgentes o no.
-
-Tras el comienzo de cualquier peticion esta no finalizará hasta que el usuario responable decida que esta ha sido realizada. 
 
 
 ### Técnico
@@ -41,7 +47,7 @@ Los técnicos pueden hacer una o varias de las siguientes tareas a la vez:
 - Todos los días introducen el tiempo real que han dedicado a cada tarea en la que participen y/o supervisen.. 
 
 
-### Jefe del Departamente Técnico:
+### Jefe del Departamento Técnico:
 
 El jefe de departamento técnico prodra consultar las estadisticas sobre el esfuerzo, la carga mensual de recursos y los resultados economicos de los proyectos. Así como generar las estadísticas de esfuerzo.
 
@@ -69,3 +75,17 @@ El personal trabaja para COANDES y dentro del sistema tiene la función de encar
 ### Jefe del Departamento Personal
 
 El jefe del departamento personal debe consultar la carga mensual de recursos.
+
+
+### Usuarios
+
+Los usuarios son personal del cliente, aquellas personas que utilizaran las aplicaciones que COANDES ofrece y mantiene. Dentro del sistema, estos usuarios tendran las siguientes funciones:
+
+- Realizar peticiones de manteinimiento correctivo ante cualquier fallo identificado durante la utilizacion de alguna de las aplicaciones.
+- Puede asignar si las peticiones que envíe son urgentes o no.
+
+### Usuarios Responsables de una Aplicación.
+
+El resposable de aplicacion puede realizar además de peticiones de mantenimiento correctivas, de tipo adaptativo, perfectivo y evolutivo con objeto de mejorar o adaptar el estado actual de la apliacion. Sigue pudiendo indicar si son urgentes o no.
+
+Tras el comienzo de cualquier peticion esta no finalizará hasta que el usuario responable decida que esta ha sido realizada.
