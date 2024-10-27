@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_mKJgQJREEe-fuYy-lSuGNg" name="responsable_petición">
+  <eAnnotations xmi:id="_mKJgQZREEe-fuYy-lSuGNg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_mKJgQpREEe-fuYy-lSuGNg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_mKJgQ5REEe-fuYy-lSuGNg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_mKJgRJREEe-fuYy-lSuGNg" name="Responsable Petición"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mKJgRZREEe-fuYy-lSuGNg" memberEnd="_mKJgRpREEe-fuYy-lSuGNg _mKJgSJREEe-fuYy-lSuGNg" navigableOwnedEnd="_mKJgRpREEe-fuYy-lSuGNg">
+    <ownedEnd xmi:id="_mKJgRpREEe-fuYy-lSuGNg" visibility="public" type="_mKJgY5REEe-fuYy-lSuGNg" isUnique="false" association="_mKJgRZREEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgR5REEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mKJgSJREEe-fuYy-lSuGNg" visibility="public" type="_mKJgRJREEe-fuYy-lSuGNg" isUnique="false" association="_mKJgRZREEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgSZREEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mKJgSpREEe-fuYy-lSuGNg" memberEnd="_mKJgS5REEe-fuYy-lSuGNg _mKJgTZREEe-fuYy-lSuGNg" navigableOwnedEnd="_mKJgS5REEe-fuYy-lSuGNg">
+    <ownedEnd xmi:id="_mKJgS5REEe-fuYy-lSuGNg" visibility="public" type="_mKJgWZREEe-fuYy-lSuGNg" isUnique="false" association="_mKJgSpREEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgTJREEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mKJgTZREEe-fuYy-lSuGNg" visibility="public" type="_mKJgRJREEe-fuYy-lSuGNg" isUnique="false" association="_mKJgSpREEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgTpREEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mKJgT5REEe-fuYy-lSuGNg" memberEnd="_mKJgUJREEe-fuYy-lSuGNg _mKJgUpREEe-fuYy-lSuGNg" navigableOwnedEnd="_mKJgUJREEe-fuYy-lSuGNg">
+    <ownedEnd xmi:id="_mKJgUJREEe-fuYy-lSuGNg" visibility="public" type="_mKJgf5REEe-fuYy-lSuGNg" isUnique="false" association="_mKJgT5REEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgUZREEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mKJgUpREEe-fuYy-lSuGNg" visibility="public" type="_mKJgRJREEe-fuYy-lSuGNg" isUnique="false" association="_mKJgT5REEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgU5REEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mKJgVJREEe-fuYy-lSuGNg" memberEnd="_mKJgVZREEe-fuYy-lSuGNg _mKJgV5REEe-fuYy-lSuGNg" navigableOwnedEnd="_mKJgVZREEe-fuYy-lSuGNg">
+    <ownedEnd xmi:id="_mKJgVZREEe-fuYy-lSuGNg" visibility="public" type="_mKJgjpREEe-fuYy-lSuGNg" isUnique="false" association="_mKJgVJREEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgVpREEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mKJgV5REEe-fuYy-lSuGNg" visibility="public" type="_mKJgRJREEe-fuYy-lSuGNg" isUnique="false" association="_mKJgVJREEe-fuYy-lSuGNg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKJgWJREEe-fuYy-lSuGNg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgWZREEe-fuYy-lSuGNg" name="Aceptar petición asignada">
+    <ownedComment xmi:id="_mKJgWpREEe-fuYy-lSuGNg">
+      <body>Descripción: Aceptar una peticion asignada por el responsable de proyecto.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgW5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgXJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgXZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgXpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgX5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <include xmi:id="_mKJgYJREEe-fuYy-lSuGNg" name="UseCaseDependency" addition="_mKJgeJREEe-fuYy-lSuGNg"/>
+    <include xmi:id="_mKJgYZREEe-fuYy-lSuGNg" name="UseCaseDependency" addition="_mKJgcZREEe-fuYy-lSuGNg"/>
+    <include xmi:id="_mKJgYpREEe-fuYy-lSuGNg" name="UseCaseDependency" addition="_mKJgapREEe-fuYy-lSuGNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgY5REEe-fuYy-lSuGNg" name="Rechazar petición asignada">
+    <ownedComment xmi:id="_mKJgZJREEe-fuYy-lSuGNg">
+      <body>Descripción: Rechazar una peticion asignada por el responsable de proyecto.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgZZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgZpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgZ5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgaJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgaZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgapREEe-fuYy-lSuGNg" name="Establecer fecha inicio de ejecución">
+    <ownedComment xmi:id="_mKJga5REEe-fuYy-lSuGNg">
+      <body>Descripción: Establecer una fecha de inicio de ejecucion donde la peticion pasará a estado &quot;en desarrollo&quot;.&#xD;
+</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgbJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgbZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgbpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgb5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgcJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgcZREEe-fuYy-lSuGNg" name="Establecer tiempo estimado">
+    <ownedComment xmi:id="_mKJgcpREEe-fuYy-lSuGNg">
+      <body>Descripción: Establecer el tiempo estimado que durará la petición durante el analisis inicial de la petición antes de darla por aceptada.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgc5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgdJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgdZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgdpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgd5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgeJREEe-fuYy-lSuGNg" name="Establecer lista inicial elementos">
+    <ownedComment xmi:id="_mKJgeZREEe-fuYy-lSuGNg">
+      <body>Descripción: Establecer una lista inicial de elementos a tratar durante el analisis inicial de la petición antes de darla por aceptada.&#xD;
+</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgepREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJge5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgfJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgfZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgfpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgf5REEe-fuYy-lSuGNg" name="Crear tareas asociadas a petición">
+    <ownedComment xmi:id="_mKJggJREEe-fuYy-lSuGNg">
+      <body>Descripción: Crear una lista de tareas asociadas a la petición en base a la lista inicial y la lista de elementos dependientes.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJggZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJggpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgg5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJghJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJghZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <include xmi:id="_mKJghpREEe-fuYy-lSuGNg" name="UseCaseDependency" addition="_mKJgh5REEe-fuYy-lSuGNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgh5REEe-fuYy-lSuGNg" name="Solicitar lista elementos dependientes">
+    <ownedComment xmi:id="_mKJgiJREEe-fuYy-lSuGNg">
+      <body>Descripción: Solicitar una lista de elementos dependientes a los elementos de la lista inicial.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgiZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgipREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgi5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgjJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgjZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgjpREEe-fuYy-lSuGNg" name="Consultar informacion sobre petición">
+    <ownedComment xmi:id="_mKJgj5REEe-fuYy-lSuGNg">
+      <body>Descripción: Consultar toda la informacion relativa a una petición.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgkJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgkZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgkpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgk5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJglJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJglZREEe-fuYy-lSuGNg" name="Modificar lista inicial elementos">
+    <ownedComment xmi:id="_mKJglpREEe-fuYy-lSuGNg">
+      <body>Descripción: Modificar la lista de elementos inicial creada durante el analisis inicial de los elementos a tratar.&#xD;
+</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgl5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgmJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgmZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgmpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgm5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <include xmi:id="_mKJgnJREEe-fuYy-lSuGNg" name="UseCaseDependency" addition="_mKJgppREEe-fuYy-lSuGNg"/>
+    <include xmi:id="_mKJgnZREEe-fuYy-lSuGNg" name="UseCaseDependency" addition="_mKJgn5REEe-fuYy-lSuGNg"/>
+    <extend xmi:id="_mKJgnpREEe-fuYy-lSuGNg" name="UseCaseDependency" extendedCase="_mKJgjpREEe-fuYy-lSuGNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgn5REEe-fuYy-lSuGNg" name="Modificar tareas a realizar">
+    <ownedComment xmi:id="_mKJgoJREEe-fuYy-lSuGNg">
+      <body>Descripción: Tras una modificacion de la lista inicial, modificar las tareas para que queden acordes a la nueva lista inicial. </body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgoZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgopREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgo5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgpJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgpZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mKJgppREEe-fuYy-lSuGNg" name="Modificar lista elementos dependientes">
+    <ownedComment xmi:id="_mKJgp5REEe-fuYy-lSuGNg">
+      <body>Descripción: Tras una modificacion de la lista inicial, modificar la lista de elementos dependientes para que queden acordes a la nueva lista inicial. </body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgqJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgqZREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgqpREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgq5REEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_mKJgrJREEe-fuYy-lSuGNg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+</uml:Model>
