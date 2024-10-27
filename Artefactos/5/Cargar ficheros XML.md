@@ -32,10 +32,4 @@ Sistema: Sistema de COANDES
 - Si el sistema  detecta que el formato del fichero XML no es válido:
   -  1. Muestra un mensaje de error indicando que el formato del fichero es incorrecto.
   -  2. Salta a los pasos 7 y 8 del escenario principal.  
-  ### Escenario alternativo 2: Error en el procesamiento
-- En caso de ocurra un erro durante el procesameinto de los elementos o dependencias:
-  - 1. El sistema detien el proceso de carga.
-  - 2. Anula cualquier cambio parcial realizado.
-  - 3. Salta a los pasos 7 y 8 del escenario principal.
-       (El paso 3. de este escenario se puede cambiar por uno que sea que le dé la opción de volver a subir el fichero XML.)
-	
+
