@@ -25,11 +25,10 @@
 - Si el sistema detecta que los datos ingresados no son válidos:
      -  a) Muestra un mensaje de error indicando qué campos son inválidos.
      -  b) Permite al usuario corregir los errores y vuelve al paso 5 del escenario principal.
-  ### Escenario Alternativo 2: Ciclo de Dependencias
-- Si el cambio en las dependencias crea un ciclo:
-    - a) Muestra un mensaje advirtiendo sobre el ciclo de dependencias.
-    -  b) Solicita al usuario que revise y ajuste las dependencias.
-    -  c) Regresa al paso 7 del escenario principal.
+  ### Escenario Alternativo 2: ID del elemento a modificar no existe
+- Si en el paso 3 el actor decide buscar por el identificador y no hay ningún elemento con ese identificador: 
+    - a) Muestra un mensaje de error.
+    - b) Regresa al paso 2 para presentarle la lista de elementos de nuevo.
   ### Escenario Alternativo 3: Error al Guardar Cambios
 - Si ocurre un error al intentar guardar los cambios:
     -  a) Muestra un mensaje informando que no se pudieron guardar los cambios.
