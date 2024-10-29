@@ -12,7 +12,7 @@
 --- 
 | Actor                                       | Sistema                                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
-| 1. Solicita la eliminación de un usuario cliente específico. | 2.	Verifica si es responsable téncico.   |
+| 1. Solicita la eliminación de un usuario cliente específico. | 2.	Verifica si es responsable comercial.   |
 | 4. Confirma la acción de eliminación.       | 3.	Pide una confirmación final para proceder con la eliminación.    |
 |                                             | 5. Elimina el usuario de la base de datos.        |
 |                                             | 6. Elimina las aplicaciones para las que el usuario eliminado era el responsable.  |
