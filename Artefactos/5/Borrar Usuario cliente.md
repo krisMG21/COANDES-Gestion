@@ -2,7 +2,7 @@
 
 ## Precondiciones: (he dado por hecho que el autor que podría hacer esta acción es del dpto. comercial, que según lo que dice el enunciado el departamento comercial es quien lleva la gestión de clientes).
 - El usuario está autenticado y es responsable comercial de COANDES.
-- El usuario nno tiene nada activo en el sistema. 
+- El usuario nno tiene nada activo en el sistema, ya sean aplicaciones o peticiones. 
 
 ## Postcondiciones: 
 - El usuario cliente queda eliminado de la base de datos.
