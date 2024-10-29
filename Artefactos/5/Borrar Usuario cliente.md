@@ -1,8 +1,8 @@
 # CASO DE USO: Borrar un usuario cliente. 
 
 ## Precondiciones: (he dado por hecho que el autor que podría hacer esta acción es del dpto. comercial, que según lo que dice el enunciado el departamento comercial es quien lleva la gestión de clientes).
-- El usuario está autenticado y es responsable técnico de COANDES.
-- El usuario cliente que desea eliminar existe en el sistema.
+- El usuario está autenticado y es responsable comercial de COANDES.
+- El usuario nno tiene nada activo en el sistema. 
 
 ## Postcondiciones: 
 - El usuario cliente queda eliminado de la base de datos.
@@ -12,7 +12,7 @@
 --- 
 | Actor                                       | Sistema                                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
-| 1. Solicita la eliminación de un usuario cliente específico. | 2.	Verifica si es responsable téncico.   |
+| 1. Solicita la eliminación de un usuario cliente específico. | 2.	Verifica si es responsable comercial.   |
 | 4. Confirma la acción de eliminación.       | 3.	Pide una confirmación final para proceder con la eliminación.    |
 |                                             | 5. Elimina el usuario de la base de datos.        |
 |                                             | 6. Elimina las aplicaciones para las que el usuario eliminado era el responsable.  |
