@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.4.1.349.1605
---   en:        2024-11-19 09:46:54 CET
+--   en:        2024-11-19 13:14:01 CET
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -75,7 +75,8 @@ CREATE TABLE personal (
     email              VARCHAR2(256 CHAR),
     telefono           NVARCHAR2(9),
     fecha_contratacion DATE,
-    inactivo           CHAR(1)
+    inactivo           CHAR(1),
+    usuario_nombre     VARCHAR2(4000) NOT NULL
 );
 
 ALTER TABLE personal ADD CONSTRAINT personal_pk PRIMARY KEY ( id_personal );
@@ -178,16 +179,28 @@ ALTER TABLE usarv1 ADD CONSTRAINT usarv1_pk PRIMARY KEY ( programa_id_elementosw
                                                           dato_id_elementosw );
 
 CREATE TABLE usuario (
+    nombre   VARCHAR2(4000) NOT NULL,
+    password VARCHAR2(4000),
+    rol      VARCHAR2(4000)
+);
+
+ALTER TABLE usuario
+    ADD CHECK ( nombre IN ( 'Comerical', 'Técnico', 'Usuario cliente' ) );
+
+ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( nombre );
+
+CREATE TABLE usuario_cliente (
     id_usuario                 INTEGER NOT NULL,
     empresa_cliente_id_empresa INTEGER NOT NULL,
     nombre                     VARCHAR2(4000),
     email                      VARCHAR2(256 CHAR),
     telefono                   NVARCHAR2(9),
     departamento               VARCHAR2(100 CHAR),
-    inactivo                   CHAR(1)
+    inactivo                   CHAR(1),
+    usuario_nombre             VARCHAR2(4000) NOT NULL
 );
 
-ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( id_usuario );
+ALTER TABLE usuario_cliente ADD CONSTRAINT usuario_pk PRIMARY KEY ( id_usuario );
 
 CREATE TABLE utiliza (
     usuario_id_usuario       INTEGER NOT NULL,
@@ -207,7 +220,7 @@ ALTER TABLE aplicación
 
 ALTER TABLE aplicación
     ADD CONSTRAINT aplicación_usuario_fk FOREIGN KEY ( usuario_id_usuario )
-        REFERENCES usuario ( id_usuario );
+        REFERENCES usuario_cliente ( id_usuario );
 
 ALTER TABLE dato
     ADD CONSTRAINT dato_documento_fk FOREIGN KEY ( documento_id_elementosw )
@@ -245,6 +258,10 @@ ALTER TABLE llama_a
     ADD CONSTRAINT llama_a_programa_fkv1 FOREIGN KEY ( programa_id_elementosw1 )
         REFERENCES programa ( id_elementosw );
 
+ALTER TABLE personal
+    ADD CONSTRAINT personal_usuario_fk FOREIGN KEY ( usuario_nombre )
+        REFERENCES usuario ( nombre );
+
 ALTER TABLE petición
     ADD CONSTRAINT petición_aplicación_fk FOREIGN KEY ( aplicación_id_aplicacion )
         REFERENCES aplicación ( id_aplicacion );
@@ -255,7 +272,7 @@ ALTER TABLE petición
 
 ALTER TABLE petición
     ADD CONSTRAINT petición_usuario_fk FOREIGN KEY ( usuario_id_usuario )
-        REFERENCES usuario ( id_usuario );
+        REFERENCES usuario_cliente ( id_usuario );
 
 ALTER TABLE programa
     ADD CONSTRAINT programa_documento_fk FOREIGN KEY ( documento_id_elementosw )
@@ -285,6 +302,10 @@ ALTER TABLE tarea
     ADD CONSTRAINT tarea_petición_fk FOREIGN KEY ( petición_id_peticion )
         REFERENCES petición ( id_peticion );
 
+ALTER TABLE técnico
+    ADD CONSTRAINT técnico_personal_fk FOREIGN KEY ( id_personal )
+        REFERENCES personal ( id_personal );
+
 ALTER TABLE usar
     ADD CONSTRAINT usar_elemento_software_fk FOREIGN KEY ( elemento_sw_id_elementosw )
         REFERENCES elemento_software ( id_elementosw );
@@ -301,7 +322,11 @@ ALTER TABLE usarv1
     ADD CONSTRAINT usarv1_programa_fk FOREIGN KEY ( programa_id_elementosw )
         REFERENCES programa ( id_elementosw );
 
-ALTER TABLE usuario
+ALTER TABLE usuario_cliente
+    ADD CONSTRAINT usuario_cliente_usuario_fk FOREIGN KEY ( usuario_nombre )
+        REFERENCES usuario ( nombre );
+
+ALTER TABLE usuario_cliente
     ADD CONSTRAINT usuario_empresa_cliente_fk FOREIGN KEY ( empresa_cliente_id_empresa )
         REFERENCES empresa_cliente ( id_empresa );
 
@@ -311,15 +336,15 @@ ALTER TABLE utiliza
 
 ALTER TABLE utiliza
     ADD CONSTRAINT utiliza_usuario_fk FOREIGN KEY ( usuario_id_usuario )
-        REFERENCES usuario ( id_usuario );
+        REFERENCES usuario_cliente ( id_usuario );
 
 
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            18
+-- CREATE TABLE                            19
 -- CREATE INDEX                             0
--- ALTER TABLE                             51
+-- ALTER TABLE                             56
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
