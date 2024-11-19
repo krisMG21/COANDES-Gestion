@@ -4,11 +4,12 @@
 - El usuario debe tener  el rol de Responsable Técnico de COANDES.
 - El fichero XML debe estar en el correo electrónico tras haber sido recibido por el responsable comerical,
  y debe tener la estructura y los formatos requeridos para así ser procesados bien y no causar ningún problema.
-- El proyecto y la aplicación correspondiente ya existen en el sistema.
+- El proyecto (debe ser responsable del este) y la aplicación correspondiente ya existen en el sistema.
 
 ## Postcondiciones: 
 - Los elementos de Software se han creado/actualizado en la base de datos.
 - Las dependencias entre elementos se han establecido/actualizado en el sistema.
+- Las relaciones entre elementos y aplicacion son creadas en la base de datos.
 - Se crea un log con el resultado de la carga. En el caso de un error, estos se reflejan en el log de carga con
   descripciones detalladas de cada error, indicando los elementos o dependencias epecíficos que generaron el error.
 
@@ -20,7 +21,7 @@ Sistema: Sistema de COANDES
 |         Actor                                                             |       Sistema                                                            |
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | 1. Selecciona la opción para cargar un fichero XML. | 2. El sistema muestra una interfaz para seleccionar el fichero XML y la aplicación asociada                     |
-| 3. Selecciona el ficher XML y la aplicación correspondiente. | 4. El sistema valida el formato del fichero XML.                       |
+| 3. Selecciona el fichero XML y la aplicación correspondiente. | 4. El sistema valida el formato del fichero XML.                       |
 |                          | 5. El sistema procesa el contenido del fichero XML, creando o actualizando los elementos SW.                                              |
 |                          | 6. El sistema establece/actualiza las dependencias entre los elementos.                     |
 |                          | 7. El sistema genera un fichero log con el resultado del proceso .|
