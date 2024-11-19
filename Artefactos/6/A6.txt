@@ -1,0 +1,5 @@
+- Tabla categoría -> tabla técnico, tabla técnico nueva solo relaciona personal con categoría y coste hora
+
+- Comercial eliminado, ahora forma parte de personal con FK id_personal en empresa_cliente
+
+- Para cada elemento SW (programa, dato y documento) se ha mantenido la tabla, tiene PFK id_elemento que la relaciona con una instancia de elemento SW
