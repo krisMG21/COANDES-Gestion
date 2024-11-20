@@ -1,3 +1,72 @@
+# CASO DE USO: Consultar proyectos
+
+## Precondiciones: 
+
+- EL usuario debe tener el rol de técnico de COANDES
+
+## Postcondiciones:
+NADA
+
+## Escenario principal
+
+|         Actor                                                             |       Sistema                                                            |
+|---------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| 1. Pulsa la pestaña para acceder a sus proyectos. | 2. El sistema muestra una lista de los proyectos de los que es responsable                     |
+
+## Escenarios alternativos:
+### Escenario Alternativo 1: dar de alta un proyecto.
+  - Si tras el paso 2 se desea dar de alta un proyecto:
+    - (3.) Extend>> CU6 - Crear proyecto
+    
+### Escenario Alternativo 2:  modificar  los datos de un proyecto.
+  - Si tras el paso 2 se desea modificar los datos de un proyecto:
+    - (3.) Extend>> CU7 - Modificar proyecto
+    
+### Escenario Alternativo 3: borrar los datos de un proyecto.
+   - Si tras el paso 2 se desea borrar un usuario proyecto:
+     - (3.) Extend>> CU8 - Borrar proyecto
+     - 
+### Escenario Alternativo 4: consultar apliaciones de un proyecto.
+   - Si tras el paso 2 se desea consultar la informacion de las apliaciones de un protecto:
+     - (3.) Extend>> CUX - Consultar aplicaciones
+    
+
+
+# CASO DE USO: Consultar aplicaciones
+
+## Precondiciones: 
+
+- EL usuario debe tener el rol de técnico de COANDES
+- El técnico debe de ser responsable de algun proyecto
+
+## Postcondiciones:
+NADA
+
+## Escenario principal
+
+|         Actor                                                             |       Sistema                                                            |
+|---------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| 1. Pulsa el boton "aplicaciones" de un proyecto. | 2. El sistema muestra una lista de las apliaciones del proyecto que es responsable                  |
+
+## Escenarios alternativos:
+### Escenario Alternativo 1: dar de alta una apliacion.
+  - Si tras el paso 2 se desea dar de alta una apliacion:
+    - (3.) Extend>> CUX - Crear aplicacion
+    
+### Escenario Alternativo 2:  modificar  los datos de una aplicacion.
+  - Si tras el paso 2 se desea modificar los datos de un proyecto:
+    - (3.) Extend>> CU7 - Modificar aplicacion
+    
+### Escenario Alternativo 3: borrar los datos de una aplicacion.
+   - Si tras el paso 2 se desea borrar un usuario aplicacion:
+     - (3.) Extend>> CU8 - Borrar aplicacion
+     - 
+### Escenario Alternativo 4: cargar fichero XML.
+   - Si tras el paso 2 se desea cargar la informacion de un fichero XML:
+     - (3.) Extend>> CU22 - Cargar fichero XML
+
+
+
 # CASO DE USO : Cargar ficheros XML. 
 
 ## Precondiciones: 
