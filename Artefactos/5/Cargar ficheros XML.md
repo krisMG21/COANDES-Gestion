@@ -89,8 +89,8 @@ Sistema: Sistema de COANDES
 
 |         Actor                                                             |       Sistema                                                            |
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| 1. Selecciona la opción para cargar un fichero XML. | 2. El sistema muestra una interfaz para seleccionar el fichero XML y la aplicación asociada                     |
-| 3. Selecciona el fichero XML y la aplicación correspondiente. | 4. El sistema valida el formato del fichero XML.                       |
+| 1. Selecciona la opción para cargar un fichero XML en una aplicacion. | 2. El sistema muestra una interfaz para seleccionar el fichero XML                     |
+| 3. Selecciona el fichero XML. | 4. El sistema valida el formato del fichero XML.                       |
 |                          | 5. El sistema procesa el contenido del fichero XML, creando o actualizando los elementos SW.                                              |
 |                          | 6. El sistema establece/actualiza las dependencias entre los elementos.                     |
 |                          | 7. El sistema genera un fichero log con el resultado del proceso .|
