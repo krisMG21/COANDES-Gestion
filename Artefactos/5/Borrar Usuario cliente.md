@@ -17,15 +17,15 @@ Nada, es una consulta
 
 --- 
 ## Escenarios alternativos : 
-### Escenario Alternativo 1: Se desea dar de alta un cliente.
+### Escenario Alternativo 1: dar de alta un cliente.
   - Si tras el paso 2 se desea dar de alta un usuario cliente:
     - (3.) Extend>> CUX - Dar de Alta
     
-### Escenario Alternativo 2: Se desea modificar  los datos de un cliente.
+### Escenario Alternativo 2: modificar  los datos de un cliente.
   - Si tras el paso 2 se desea modificar los datos de un usuario cliente:
     - (3.) Extend>> CUX - Modificar datos
     
-### Escenario Alternativo 3: Se desea borrar los datos de un cliente.
+### Escenario Alternativo 3: borrar los datos de un cliente.
    - Si tras el paso 2 se desea borrar un usuario cliente:
      - (3.) Extend>> CUX - Borrar usuarios
 
@@ -42,7 +42,7 @@ Nada, es una consulta
 - El usuario cliente queda eliminado de la tabla usuarios de la base de datos.
 - Las peticiones en estado "recibido" cuyo solicitante sea el usuario borrado quedan borradas.
 - Las tuplas de la tabla usuarios-peticiones que tengan como usuario y peticiones las que se pretende borrar en los dos puntos anteriores quedan eliminadas.
-- Se eliminan las aplicaciones para las que era responsable.
+- Se eliminan las relaciones usuario cliente - apliacion de la base de datos
 
 ## Escenario Principal: 
 *El comercial ya se encuentra en la pestaña de consutla de usuarios
