@@ -1,4 +1,4 @@
-# CASO DE USO : Consultar usuarios
+# CASO DE USO : Consultar clientes
 
 ## Precondiciones
 - El usuario inicia sesion como comercial
