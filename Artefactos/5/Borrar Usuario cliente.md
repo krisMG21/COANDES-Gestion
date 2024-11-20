@@ -1,4 +1,4 @@
-# CASO DE USO : Consultar usuarios ??????????????????????????????
+# CASO DE USO : Consultar usuarios
 
 ## Precondiciones
 - El usuario inicia sesion como comercial
@@ -25,7 +25,7 @@ Nada, es una consulta
   - Si tras el paso 2 se desea modificar los datos de un usuario cliente:
     - (3.) Extend>> CUX - Modificar datos
     
-### Escenario Alternativo 2: Se desea borrar los datos de un cliente.
+### Escenario Alternativo 3: Se desea borrar los datos de un cliente.
    - Si tras el paso 2 se desea borrar un usuario cliente:
      - (3.) Extend>> CUX - Borrar usuarios
 
