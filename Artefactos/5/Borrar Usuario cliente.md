@@ -19,15 +19,15 @@ Nada, es una consulta
 ## Escenarios alternativos : 
 ### Escenario Alternativo 1: dar de alta un cliente.
   - Si tras el paso 2 se desea dar de alta un usuario cliente:
-    - (3.) Extend>> CUX - Alta cliente
+    - (3.) Extend>> CU39 - Alta cliente
     
 ### Escenario Alternativo 2: modificar  los datos de un cliente.
   - Si tras el paso 2 se desea modificar los datos de un usuario cliente:
-    - (3.) Extend>> CUX - Modificar cliente
+    - (3.) Extend>> CU38 - Modificar cliente
     
 ### Escenario Alternativo 3: borrar los datos de un cliente.
    - Si tras el paso 2 se desea borrar un usuario cliente:
-     - (3.) Extend>> CUX - Borrar usuarios cliente
+     - (3.) Extend>> CU41 - Borrar usuarios cliente
 
 
 
