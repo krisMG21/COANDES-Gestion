@@ -4,10 +4,15 @@
 PRECONDICIONES:
 - El usuario debe de haber iniciado sesion como técnico
 - El tecnico debe de haber solicitado al sistema la lista de elementos dependientes a la lista de elementos inicial.
+- La petición debe de estar en estado en desarrollo.
 
 
 POSTCONDICIONES:
 - Se crea una lista de tareas, cada una con sus datos y personas a cargo.
+- Se da de alta la tarea en la tabla tareas de la base de datos
+- Se da de alta la tarea en la tabla tarea-petición de la base de datos
+- Se da de alta la tarea en la tabla alta‐tarea‐técnicos de la base de datos
+- Se da de alta la tarea en la tabla alta tarea‐elemento de la base de datos
 
 ESCENARIO PRINCIPAL:
 

@@ -1,28 +1,74 @@
-# CASO DE USO: Borrar un usuario cliente. 
+# CASO DE USO : Consultar clientes
 
-## Precondiciones: (he dado por hecho que el autor que podría hacer esta acción es del dpto. comercial, que según lo que dice el enunciado el departamento comercial es quien lleva la gestión de clientes).
-- El usuario está autenticado y es responsable comercial de COANDES.
-- El usuario nno tiene nada activo en el sistema, ya sean aplicaciones o peticiones. 
+## Precondiciones
+- El usuario inicia sesion como comercial
+- El comercial es responsable de los usuarios cliente de los que quiere consultar su información
 
-## Postcondiciones: 
-- El usuario cliente queda eliminado de la base de datos.
-- Se eliminan las aplicaciones para las que era responsable.
+## Postcondiciones
+Nada, es una consulta
 
-## Escenario Principal: 
+## Escenario principal
+
 --- 
 | Actor                                       | Sistema                                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
-| 1. Solicita la eliminación de un usuario cliente específico. | 2.	Verifica si es responsable comercial.   |
-| 4. Confirma la acción de eliminación.       | 3.	Pide una confirmación final para proceder con la eliminación.    |
-|                                             | 5. Elimina el usuario de la base de datos.        |
-|                                             | 6. Elimina las aplicaciones para las que el usuario eliminado era el responsable.  |
+| 1. El comercial pulsa la pestaña de "clientes". | 2.	La interfaz muestra una lista de todos los clientes de los que el comercial es responsable.   |
 
 
 --- 
 ## Escenarios alternativos : 
-### Escenario Alternativo 1: Búsqueda por ID de usuario.
-  - Si el autor introduce un ID de usuario que no existe en el sistema.
-      - 1) El sistema le muestra un mensaje de error indicando que el usuario con el ID especificado no existe en el sistema.
-      - 2) Permite al actor volver al paso 1 del escenario principal donde podrá elegir el usuario a eliminar o buscarlo por su ID.
+### Escenario Alternativo 1: dar de alta un cliente.
+  - Si tras el paso 2 se desea dar de alta un usuario cliente:
+    - (3.) Extend>> CU39 - Alta cliente
+    
+### Escenario Alternativo 2: modificar  los datos de un cliente.
+  - Si tras el paso 2 se desea modificar los datos de un usuario cliente:
+    - (3.) Extend>> CU38 - Modificar cliente
+    
+### Escenario Alternativo 3: borrar los datos de un cliente.
+   - Si tras el paso 2 se desea borrar un usuario cliente:
+     - (3.) Extend>> CU41 - Borrar usuarios cliente
+
+
+
+# CASO DE USO: Borrar un usuario cliente. 
+
+## Precondiciones:
+- El usuario que realizará el caso de uso está autenticado y es responsable comercial de COANDES.
+- El comercial responsable es responsable del usuario cliente a borrar.
+- El usuario cliene a borrar no tiene nada activo en el sistema, ya sean aplicaciones (no es responsable de ella) o peticiones (solo en estados recibidas, rechazadas o terminadas). 
+
+## Postcondiciones: 
+- El usuario cliente queda eliminado de la tabla usuarios de la base de datos.
+- Las peticiones en estado "recibido" cuyo solicitante sea el usuario borrado quedan borradas.
+- Las tuplas de la tabla usuarios-peticiones que tengan como usuario y peticiones las que se pretende borrar en los dos puntos anteriores quedan eliminadas.
+- Se eliminan las relaciones usuario cliente - apliacion de la base de datos
+
+## Escenario Principal: 
+*El comercial ya se encuentra en la pestaña de consutla de usuarios
+--- 
+| Actor                                       | Sistema                                                                                           |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------|
+| 1. Solicita la eliminación de un usuario cliente específico pulsando el boton de "eliminar". | 2.	Confirma que es posible eliminar ese usuario.   |
+|            | 3.	Muestra un listado de las peticiones que serian eliminadas.    |
+| 5. Confirma la acción de eliminación        | 4. Solicita una confirmacion de la accion al comercial        |
+|                                             | 6. Elimina las peticiones en estado "recibida", desactiva las que estan en estado "terminadas" o "rechazadas"  |
+|                                             | 7. Avisa al comercial que el borrado fue un éxito        |
+
+
+--- 
+## Escenarios alternativos : 
+### Escenario Alternativo 1: No es posible eliminar al usuario cliente.
+  - Si tras el paso 1 el usuario cliente a eliminar seria responsable de aplicación y/o tuviera peticiones en estado "en desarrollo" , "pendiente" o "en estudio":
+    -  (2.) El sistema informa al usuario de que no es posible eliminar al cliente
+    -  (3.) El sistema muestra al usuario una lista de las peticiones y/o aplicaciones que impiden el borrado
+    -  (4.) El usuario pulsa el boton de "Aceptar"
+    -  (5.) Se vuelve al paso 1
+
+### Escenario Alternativo 2: Cancelar el borrado.
+  - Si tras el paso 4 el comercial no desea realizar el borrado
+    - (5.) El usuario pulsa el boton de cancelar
+    - (6.) Se vuelve al paso 1
+  
 
 
