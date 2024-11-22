@@ -31,42 +31,25 @@
 |               | 18. El sistema guarda todas las modificaciones en la base de datos. |
 |               | 19. El sistema muestra un mensaje de confirmación indicando que los cambios se han guardado exitosamente. |
 
-
-## Escenario principal: 
-| Actor         | Sistema                                                                 |
-|---------------|-------------------------------------------------------------------------|
-| 1. El usuario selecciona la opción "Modificar Elemento de Software".   | 2. El sistema presenta una lista de elementos de software disponibles. |
-| 3. El usuario selecciona el elemento deseado para modificar.            | 4. El sistema muestra los detalles actuales del elemento seleccionado (nombre, dirección de almacenamiento, dependencias). |
-| 5. El usuario modifica los campos deseados (nombre y/o dirección).     | 6. El sistema valida los datos ingresados y verifica que no existan conflictos. |
-| 7. El usuario ajusta las dependencias del elemento si es necesario.     | 8. El sistema actualiza las listas de elementos dependientes basándose en los cambios realizados. |
-| 9. El usuario confirma los cambios realizados.                          | 10. El sistema guarda las modificaciones del elemento en la base de datos. |
-|               | 11. El sistema actualiza las tareas relacionadas con el elemento modificado si es necesario. |
-|               | 12. El sistema muestra un mensaje de confirmación indicando que los cambios se han guardado exitosamente. |
-
-
-
-
-
 ## Escenarios excepcionales o alternativos
   ### - Escenario Alternativo 1: El usuario no confirma la modificación del elemento
 - Si en el paso 4 el usuario no confirma que desea modificar el elemento:
     -  a) El sistema termina el caso de uso.
-  ### Escenario Alternativo 2: El usuario no confirma la modificación de las relaciones
+  ### - Escenario Alternativo 2: El usuario no confirma la modificación de las relaciones
 - Si en el paso 7 el usuario no confirma proceder con los cambios en las peticiones en desarrollo:
     -  a) El sistema termina el caso de uso.
-  ### Escenario Alternativo 3: El usuario decide no continuar tras la advertencia
+  ### - Escenario Alternativo 3: El usuario decide no continuar tras la advertencia
 - Si en el paso 14 el usuario decide no continuar después de saber que no se pueden eliminar ciertas relaciones:
     -  a) El sistema termina el caso de uso.
-  ### Escenario Alternativo 4: Datos Ingresados No Válidos
+  ### - Escenario Alternativo 4: Datos Ingresados No Válidos
 - Si el sistema detecta datos no válidos en cualquier paso:
     -  a) Muestra un mensaje de error indicando los campos inválidos.
     -  b) Permite al usuario corregir los errores y vuelve al paso correspondiente.
-  ### Escenario Alternativo 5: Error al Guardar Cambios
+  ### - Escenario Alternativo 5: Error al Guardar Cambios
 - Si ocurre un error al intentar guardar los cambios:
     -  a) Muestra un mensaje informando que no se pudieron guardar los cambios.
     -  b) Registra el error en el log del sistema para futuras auditorías.
     -  c) Permite al usuario intentar guardar nuevamente o cancelar la operación, regresando al paso 15 del escenario principal.
-
 
 ## Escenarios excepcionales o alternativos
   ### - Escenario Alternativo 1: Datos Ingresados No Válidos :
