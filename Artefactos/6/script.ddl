@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.4.1.349.1605
---   en:        2024-11-21 23:46:08 CET
+--   en:        2024-11-19 13:14:01 CET
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -153,9 +153,9 @@ CREATE TABLE tarea (
 ALTER TABLE tarea ADD CONSTRAINT tarea_pk PRIMARY KEY ( id_tarea );
 
 CREATE TABLE técnico (
-    id_personal INTEGER NOT NULL,
-    categoria   VARCHAR2(4000) NOT NULL,
-    coste_hora  FLOAT
+    id_personal         INTEGER NOT NULL,
+    categoria_categoria VARCHAR2(4000) NOT NULL,
+    coste_hora          FLOAT
 );
 
 ALTER TABLE técnico ADD CONSTRAINT técnico_pk PRIMARY KEY ( id_personal );
@@ -187,7 +187,7 @@ CREATE TABLE usuario (
 ALTER TABLE usuario
     ADD CHECK ( nombre IN ( 'Comerical', 'Técnico', 'Usuario cliente' ) );
 
-ALTER TABLE usuario ADD CONSTRAINT usuario_pkv1 PRIMARY KEY ( nombre );
+ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( nombre );
 
 CREATE TABLE usuario_cliente (
     id_usuario                 INTEGER NOT NULL,
