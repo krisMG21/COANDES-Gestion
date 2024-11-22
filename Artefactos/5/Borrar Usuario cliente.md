@@ -1,36 +1,3 @@
-# CASO DE USO : Consultar clientes
-
-## Precondiciones
-- El usuario inicia sesion como comercial
-- El comercial es responsable de los usuarios cliente de los que quiere consultar su información
-
-## Postcondiciones
-Nada, es una consulta
-
-## Escenario principal
-
---- 
-| Actor                                       | Sistema                                                                                           |
-|---------------------------------------------|---------------------------------------------------------------------------------------------------|
-| 1. El comercial pulsa la pestaña de "clientes". | 2.	La interfaz muestra una lista de todos los clientes de los que el comercial es responsable.   |
-
-
---- 
-## Escenarios alternativos : 
-### Escenario Alternativo 1: dar de alta un cliente.
-  - Si tras el paso 2 se desea dar de alta un usuario cliente:
-    - (3.) Extend>> CU39 - Alta cliente
-    
-### Escenario Alternativo 2: modificar  los datos de un cliente.
-  - Si tras el paso 2 se desea modificar los datos de un usuario cliente:
-    - (3.) Extend>> CU38 - Modificar cliente
-    
-### Escenario Alternativo 3: borrar los datos de un cliente.
-   - Si tras el paso 2 se desea borrar un usuario cliente:
-     - (3.) Extend>> CU41 - Borrar usuarios cliente
-
-
-
 # CASO DE USO: Borrar un usuario cliente. 
 
 ## Precondiciones:
