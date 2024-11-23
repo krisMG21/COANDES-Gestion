@@ -16,17 +16,6 @@ POSTCONDICIONES:
 
 ESCENARIO PRINCIPAL:
 
-1. El tecnico pulsa el boton de la interfaz para accceder a su buzon de peticiones
-2. El sistema le muestra el buzon de peticiones
-3. El tecnico selecciona la peticion que desea añadir tareas
-4. El sistema le muestra la informacion relativa a la peticion
-5. El tecnico pulsa el boton de la interfaz que le muestra todos los elementos realtivos a la peticion
-6. El sistema le muestra una lista de todos los elementos realivos a la tarea.
-7. El tecnico selecciona un elemento y pulsa añadir tarea
-8. El sistema le muestra una ventana donde introducir los datos relativos a la tarea.
-9. El tecnico introduce los datos relativos a la tarea y pulsa aceptar.
-10. El sistema le confima su acción.
-
 --- 
 | Actor                                       | Sistema                                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
