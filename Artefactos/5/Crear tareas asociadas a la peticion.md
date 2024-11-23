@@ -25,12 +25,22 @@ ESCENARIO PRINCIPAL:
 7. El tecnico selecciona un elemento y pulsa añadir tarea
 8. El sistema le muestra una ventana donde introducir los datos relativos a la tarea.
 9. El tecnico introduce los datos relativos a la tarea y pulsa aceptar.
-10. El sistema le confirma su accion.
-11. El tecnico pulsa el boton para confirmar los cambios sobre la peticion.
-12. El sistema le confima su acción.
+10. El sistema le confima su acción.
+
+--- 
+| Actor                                       | Sistema                                                                                           |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------|
+| 1. Pulsa el boton de la interfaz para accceder a su buzon de peticiones. | 2.	Muestra el buzon de peticiones.   |
+| 3. Selecciona la peticion que desea añadir tareas.           | 4.	Muestra la informacion relativa a la peticion.    |
+| 5. Pulsa el boton de la interfaz que le muestra todos los elementos realtivos a la peticion.        | 6. Muestra una lista de todos los elementos realivos a la tarea.        |
+| 7. Selecciona un elemento y pulsa añadir tarea.       | 8. Muestra una ventana donde introducir los datos relativos a la tarea.  |
+| 9. Introduce los datos relativos a la tarea y pulsa aceptar.   | 10. Confima su acción        |
+
+
+--- 
 
 ESCENARIOS ALTERNATIVOS:
 
 Si en el paso 11, se decide crear otra tarea entonces se vuelve al paso 9.
 
-Si entre los pasos 7 y 11 se decide cancelar la accion, el tecnico pulsara el boton de cancelar y el sistema le confirma que se han desecho los cambios.
+Si entre los pasos 7 y 9 se decide cancelar la accion, el tecnico pulsara el boton de cancelar y el sistema le confirma que se han desecho los cambios.
