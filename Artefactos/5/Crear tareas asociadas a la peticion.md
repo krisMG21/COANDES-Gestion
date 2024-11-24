@@ -21,7 +21,7 @@ ESCENARIO PRINCIPAL:
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 1. Pulsa el boton de la interfaz para accceder a su buzon de peticiones. | 2.	Muestra el buzon de peticiones.   |
 | 3. Selecciona la peticion que desea añadir tareas.           | 4.	Muestra la informacion relativa a la peticion.    |
-| 5. Pulsa el boton de la interfaz que le muestra todos los elementos realtivos a la peticion.        | 6. Muestra una lista de todos los elementos realivos a la tarea.        |
+| 5. Pulsa el boton de la interfaz que le muestra todos los elementos realtivos a la peticion.        | 6. Muestra una lista de todos los elementos relativos a la tarea.        |
 | 7. Selecciona un elemento y pulsa añadir tarea.       | 8. Muestra una ventana donde introducir los datos relativos a la tarea.  |
 | 9. Introduce los datos relativos a la tarea y pulsa aceptar.   | 10. Confima su acción        |
 
