@@ -35,5 +35,5 @@ Sistema: Sistema de COANDES
   -  2. Salta a los pasos 7 y 8 del escenario principal.
   ### Escenario alternativo 2: Cancelar acción de la carga de fichero
 - Si el autor cancela la acción
-  - 1. Después del paso 3 del escenario principal pusla el botón puslar y finaliza. 
+  - 1. Después del paso 3 del escenario principal pulsa el botón pulsar y finaliza. 
 
