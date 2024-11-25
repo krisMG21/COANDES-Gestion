@@ -2,7 +2,7 @@
 
 ## Precondiciones:
 - El usuario que realizará el caso de uso está autenticado y es responsable comercial de COANDES.
-- El comercial responsable es responsable del usuario cliente a borrar. Esto se puede comprobar en el caso de uso CU46 - Consultar usuarios clientes
+- El comercial responsable es responsable del usuario cliente a borrar. Esto se puede comprobar en el caso de uso CU46- Consultar usuarios clientes
 - El usuario cliente a borrar no tiene nada activo en el sistema, ya sean aplicaciones (no es responsable de ella) o peticiones (solo en estados recibidas, rechazadas o terminadas). 
 
 ## Postcondiciones: 
