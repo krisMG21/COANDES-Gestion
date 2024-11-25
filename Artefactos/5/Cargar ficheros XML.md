@@ -4,7 +4,7 @@
 - El usuario debe tener  el rol de Responsable Técnico de COANDES.
 - El fichero XML debe estar en el correo electrónico tras haber sido recibido por el responsable comerical,
  y debe tener la estructura y los formatos requeridos para así ser procesados bien y no causar ningún problema.
-- El proyecto (debe ser responsable del este) y la aplicación correspondiente ya existen en el sistema. Esto se comrprueba en el caso de uso CUX - Consultar apliaciones
+- El proyecto (debe ser responsable del este) y la aplicación correspondiente ya existen en el sistema. Esto se comrprueba en el caso de uso CU9 - Consultar apliaciones
 
 ## Postcondiciones: 
 - Los elementos de Software se han creado/actualizado en la base de datos.
