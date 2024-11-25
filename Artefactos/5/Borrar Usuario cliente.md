@@ -9,7 +9,7 @@
 - El usuario cliente queda eliminado de la tabla usuarios de la base de datos.
 - Las peticiones en estado "recibido" cuyo solicitante sea el usuario borrado quedan borradas.
 - Las tuplas de la tabla usuarios-peticiones que tengan como usuario y peticiones las que se pretende borrar en los dos puntos anteriores quedan eliminadas.
-- Se eliminan las relaciones usuario cliente - apliacion de la base de datos
+- Se eliminan las relaciones usuario cliente - aplicacion de la base de datos
 
 ## Escenario Principal: 
 *El comercial ya se encuentra en la pestaña de consutla de usuarios
