@@ -1,7 +1,7 @@
 # CASO DE USO: Modificar un elemento de software 
 ## Precondiciones: 
 - El usuario está autenticado y tiene rol de responsable técnico de COANDES.
-- El usuario está asignado a un proyecto al que pertenece alguna de las aplicaciones en las que está incluido el elemento a modificar. Esto esta comprobado en el caso de uso CUX - Consultar elementos SW
+- El usuario está asignado a un proyecto al que pertenece alguna de las aplicaciones en las que está incluido el elemento a modificar. Esto esta comprobado en el caso de uso CU14 - Consultar elementos SW
 - El elemento no está inactivo.
 
 ## Poscondiciones: 
