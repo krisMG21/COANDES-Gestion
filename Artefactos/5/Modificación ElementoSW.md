@@ -17,10 +17,9 @@
 ## Escenario principal: 
 | Actor         | Sistema                                                                 |
 |---------------|-------------------------------------------------------------------------|
-| 1. El usuario selecciona la opción "Modificar Elemento de Software".   | 2. El sistema verifica que el usuario está autenticado y tiene rol de responsable técnico de COANDES y que el usuario está asignado a un proyecto al que pertenece alguna de las aplicaciones en las que está incluido el elemento a modificar. Si no cumple con esas condiciones, muestra un mensaje de error y termina el caso de uso. |
+| 1. El usuario selecciona la opción "Modificar Elemento de Software".   | |
 |             | 3. El sistema muestra los datos actuales del elemento a modificar. |
-| 4. El usuario confirma que desea modificar el elemento.     | 5. El sistema pregunta si el usuario desea cambiar la lista de elementos relacionados. |
-| 6. El usuario decide si quiere modificar las relaciones.     | 7. El sistema busca las peticiones en desarrollo en las que el elemento a modificar está en la lista inicial y pide confirmación para proceder. |
+|| 7. El sistema busca las peticiones en desarrollo en las que el elemento a modificar está en la lista inicial y pide confirmación para proceder. |
 | 8. El usuario confirma para continuar.                          | 9. El sistema muestra los elementos relacionados actuales. |
 | 10. El usuario selecciona los elementos que desea dar de baja y añade nuevos elementos si es necesario.              | 11. El sistema genera una nueva lista de elementos relacionados para cada petición en desarrollo en las que esté el elemento a modificar en la lista inicial y compara con la lista anterior. |
 |               | 12. El sistema identifica los elementos que deben ser eliminados, incluyendo el inicial si corresponde. |
