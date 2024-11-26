@@ -17,35 +17,26 @@
 ## Escenario principal: 
 | Actor         | Sistema                                                                 |
 |---------------|-------------------------------------------------------------------------|
-| 1. El usuario selecciona la opción "Modificar Elemento de Software".   | |
-|             | 3. El sistema muestra los datos actuales del elemento a modificar. |
-|| 7. El sistema busca las peticiones en desarrollo en las que el elemento a modificar está en la lista inicial y pide confirmación para proceder. |
-| 8. El usuario confirma para continuar.                          | 9. El sistema muestra los elementos relacionados actuales. |
-| 10. El usuario selecciona los elementos que desea dar de baja y añade nuevos elementos si es necesario.              | 11. El sistema genera una nueva lista de elementos relacionados para cada petición en desarrollo en las que esté el elemento a modificar en la lista inicial y compara con la lista anterior. |
-|               | 12. El sistema identifica los elementos que deben ser eliminados, incluyendo el inicial si corresponde. |
-|               | 13. Para cada petición en desarrollo afectada, el sistema busca las tareas de los elementos que deben eliminarse. |
-|               | 14. El sistema muestra los elementos que tienen tareas no cerradas con horas cargadas y notifica que no se pueden eliminar esas relaciones. Pide confirmación para continuar. |
-| 15. El usuario confirma para continuar con los cambios posibles.              | 16. El sistema elimina las relaciones de los elementos que se pueden eliminar y actualiza las peticiones y tareas correspondientes. |
-|               | 17. El sistema añade los nuevos elementos relacionados en las peticiones no terminadas donde está el elemento a modificar en la lista inicial, si aún no están presentes. |
-|               | 18. El sistema guarda todas las modificaciones en la base de datos. |
-|               | 19. El sistema muestra un mensaje de confirmación indicando que los cambios se han guardado exitosamente. |
+| 1. Selecciona la opción "Modificar Elemento de Software".   | 2. Muestra los datos actuales del elemento a modificar. |
+| 3. Modifica el elemento y confirma los cambios. | 4. Pregunta al usuario si quiere cambiar la lista de dependencias.  |
+| 5. Confirma que desea modificar la lista de dependencias. |6. Muestra la lista con las dependencias del elemento a modificar. |
+| 8. Modifica la lista de dependencias (añade, bajas). | 9. Busca las peticiones en desarrollo donde el elementoSW a modificar este en la lista inicial. |
+| | 10. Para cada petición en desarrollo muestra una nueva lista inicial aplicando los cambios resultantes y la compara con la lista anterior |
+| 11. Confirma los cambios de las listas iniciales.| 12. Muestra aquellas tareas que serán eliminadas y aquellas que no será posible debido a que no estan cerradas. |
+| 13. Confirma las tareas que serán eliminadas. | 14. Elimina las tareas, las dependencias y las relaciones necesarias. |
+|               | 15. Añade los nuevos elementos relacionados a la lista de dependencias del elemento modificado. |
 
 ## Escenarios excepcionales o alternativos
   ### - Escenario Alternativo 1: El usuario no confirma la modificación del elemento
-- Si en el paso 4 el usuario no confirma que desea modificar el elemento:
+- Si en el paso 3 el usuario no confirma que desea modificar el elemento:
     -  a) El sistema termina el caso de uso.
   ### - Escenario Alternativo 2: El usuario no confirma la modificación de las relaciones
-- Si en el paso 7 el usuario no confirma proceder con los cambios en las peticiones en desarrollo:
+- Si en el paso 5 el usuario no confirma proceder con los cambios en las peticiones en desarrollo:
     -  a) El sistema termina el caso de uso.
   ### - Escenario Alternativo 3: El usuario decide no continuar tras la advertencia
 - Si en el paso 14 el usuario decide no continuar después de saber que no se pueden eliminar ciertas relaciones:
     -  a) El sistema termina el caso de uso.
   ### - Escenario Alternativo 4: Datos Ingresados No Válidos
-- Si el sistema detecta datos no válidos en cualquier paso:
+- Si el sistema detecta datos no válidos el paso 3:
     -  a) Muestra un mensaje de error indicando los campos inválidos.
     -  b) Permite al usuario corregir los errores y vuelve al paso correspondiente.
-  ### - Escenario Alternativo 5: Error al Guardar Cambios
-- Si ocurre un error al intentar guardar los cambios:
-    -  a) Muestra un mensaje informando que no se pudieron guardar los cambios.
-    -  b) Registra el error en el log del sistema para futuras auditorías.
-    -  c) Permite al usuario intentar guardar nuevamente o cancelar la operación, regresando al paso 15 del escenario principal.
