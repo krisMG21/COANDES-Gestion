@@ -18,9 +18,8 @@
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 1. Solicita la eliminación de un usuario cliente específico pulsando el boton de "eliminar". | 2.	Confirma que es posible eliminar ese usuario.   |
 |            | 3.	Muestra un listado de las peticiones que serian eliminadas.    |
-| 5. Confirma la acción de eliminación        | 4. Solicita una confirmacion de la accion al comercial        |
-|                                             | 6. Elimina las peticiones en estado "recibida", desactiva las que estan en estado "terminadas" o "rechazadas"  |
-|                                             | 7. Avisa al comercial que el borrado fue un éxito        |
+| 4. Confirma la acción de eliminación        | 5. Elimina las peticiones en estado "recibida", desactiva las que estan en estado "terminadas" o "rechazadas"        |
+|                                             | 6. Elimina el usuario cliente y su relacion con las aplicaciones  |
 
 
 --- 
