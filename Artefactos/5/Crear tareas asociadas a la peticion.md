@@ -20,16 +20,24 @@ ESCENARIO PRINCIPAL:
 | Actor                                       | Sistema                                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 1. Pulsa el boton de la interfaz para accceder a su buzon de peticiones. | 2.	Muestra el buzon de peticiones.   |
-| 3. Selecciona la peticion que desea añadir tareas.           | 4.	Muestra la informacion relativa a la peticion.    |
-| 5. Pulsa el boton de la interfaz que le muestra todos los elementos realtivos a la peticion.        | 6. Muestra una lista de todos los elementos relativos a la tarea.        |
-| 7. Selecciona un elemento y pulsa añadir tarea.       | 8. Muestra una ventana donde introducir los datos relativos a la tarea.  |
-| 9. Introduce los datos relativos a la tarea y pulsa aceptar.   | 10. Confima su acción        |
+| 3. Selecciona la peticion en desarrollo que desea añadir tareas.           | 4.	Muestra la lista de elementos de la petición.    |
+| 5. Selecciona el elemento sobre el que se desea añadir la tarea.        | 6. Muestra un formulario donde introducir los datos de la tarea y asociar un técnico a ella.        |
+| 7. Introduce los datos de la tarea y selecciona un técnico.       | 8. Verifica los datos y pide confirmación.  |
+| 9. Confirma.   | 10. Crea la tarea y sus relaciones con petición, elemento y técnico  |
+| | 11. Pregunta si desea añadir otra tarea al elemento.|
+| 12. Responde 'no'.| 13. Pregunta si desea añadir otra tarea sobre otro elemento de la petición. |
+| 14. Responde 'no' y termina el proceso. | | 
 
 
 --- 
 
 ESCENARIOS ALTERNATIVOS:
 
-Si en el paso 11, se decide crear otra tarea entonces se vuelve al paso 9.
+Si en el paso 8 el sistema encuentra fallos en los datos de entrada introducidos por el usuario, muestra un mensaje de error informando de los motivos y vuelve a al paso 7.
 
-Si entre los pasos 7 y 9 se decide cancelar la accion, el tecnico pulsara el boton de cancelar y el sistema le confirma que se han desecho los cambios.
+Si en el paso 9 se decide cancelar la accion, el sistema descartarña los cambios y termina el proceso.
+
+Si en el paso 12 se decide crear otra tarea sobre el mismo elemento respondiendo 'si', entonces se vuelve al paso 7.
+
+Si en el paso 14 se decide crear otra tarea sobre la misma petición respondiendo 'si', entonces se vuelve al paso 5.
+
