@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.4.1.349.1605
---   en:        2024-11-19 13:14:01 CET
+--   en:        2024-12-26 12:45:23 CET
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -10,33 +10,23 @@
 -- predefined type, no DDL - XMLTYPE
 
 CREATE TABLE aplicación (
-    id_aplicacion           INTEGER NOT NULL,
-    proyecto_id_proyecto    INTEGER NOT NULL,
-    usuario_id_usuario      INTEGER NOT NULL,
-    documento_id_elementosw INTEGER NOT NULL
+    id_aplicacion        INTEGER NOT NULL,
+    proyecto_id_proyecto INTEGER NOT NULL,
+    usuario_id_usuario   INTEGER NOT NULL
 );
 
 ALTER TABLE aplicación ADD CONSTRAINT aplicación_pk PRIMARY KEY ( id_aplicacion );
 
-CREATE TABLE dato (
-    id_elementosw           INTEGER NOT NULL,
-    documento_id_elementosw INTEGER NOT NULL
-);
-
-ALTER TABLE dato ADD CONSTRAINT dato_pk PRIMARY KEY ( id_elementosw );
-
-CREATE TABLE documento (
-    id_elementosw INTEGER NOT NULL
-);
-
-ALTER TABLE documento ADD CONSTRAINT documento_pk PRIMARY KEY ( id_elementosw );
-
 CREATE TABLE elemento_software (
-    id_elementosw            INTEGER NOT NULL,
-    nombre                   VARCHAR2(4000) NOT NULL,
-    direccion_almacenamiento VARCHAR2(4000) NOT NULL,
-    inactivo                 CHAR(1),
-    tarea_id_tarea           INTEGER NOT NULL
+    id_elementosw             INTEGER NOT NULL,
+    nombre                    VARCHAR2(4000) NOT NULL,
+    direccion_almacenamiento  VARCHAR2(4000) NOT NULL,
+    inactivo                  CHAR(1),
+    tarea_id_tarea            INTEGER NOT NULL,
+    tipo_elemento             VARCHAR2(4000),
+    elemento_sw_id_elementosw INTEGER,
+    llama_a_programa_id       INTEGER,
+    llamado_por_programa_id   INTEGER
 );
 
 ALTER TABLE elemento_software ADD CONSTRAINT elemento_software_pk PRIMARY KEY ( id_elementosw );
@@ -62,21 +52,20 @@ ALTER TABLE formada_por ADD CONSTRAINT formada_por_pk PRIMARY KEY ( aplicación_i
                                                                     elemento_sw_id_elementosw );
 
 CREATE TABLE llama_a (
-    programa_id_elementosw  INTEGER NOT NULL,
-    programa_id_elementosw1 INTEGER NOT NULL
+    programa_id_elementosw         INTEGER NOT NULL,
+    programa_llamado_id_elementosw INTEGER NOT NULL
 );
 
 ALTER TABLE llama_a ADD CONSTRAINT llama_a_pk PRIMARY KEY ( programa_id_elementosw,
-                                                            programa_id_elementosw1 );
+                                                            programa_llamado_id_elementosw );
 
 CREATE TABLE personal (
     id_personal        INTEGER NOT NULL,
-    nombre             VARCHAR2(4000),
+    nombre             VARCHAR2(4000) NOT NULL,
     email              VARCHAR2(256 CHAR),
     telefono           NVARCHAR2(9),
     fecha_contratacion DATE,
-    inactivo           CHAR(1),
-    usuario_nombre     VARCHAR2(4000) NOT NULL
+    inactivo           CHAR(1)
 );
 
 ALTER TABLE personal ADD CONSTRAINT personal_pk PRIMARY KEY ( id_personal );
@@ -110,13 +99,6 @@ ALTER TABLE petición
     ADD CHECK ( complejidad IN ( 'Alta', 'Baja', 'Mediana' ) );
 
 ALTER TABLE petición ADD CONSTRAINT petición_pk PRIMARY KEY ( id_peticion );
-
-CREATE TABLE programa (
-    id_elementosw           INTEGER NOT NULL,
-    documento_id_elementosw INTEGER NOT NULL
-);
-
-ALTER TABLE programa ADD CONSTRAINT programa_pk PRIMARY KEY ( id_elementosw );
 
 CREATE TABLE proyecto (
     id_proyecto                INTEGER NOT NULL,
@@ -153,9 +135,9 @@ CREATE TABLE tarea (
 ALTER TABLE tarea ADD CONSTRAINT tarea_pk PRIMARY KEY ( id_tarea );
 
 CREATE TABLE técnico (
-    id_personal         INTEGER NOT NULL,
-    categoria_categoria VARCHAR2(4000) NOT NULL,
-    coste_hora          FLOAT
+    id_personal INTEGER NOT NULL,
+    categoria   VARCHAR2(4000) NOT NULL,
+    coste_hora  FLOAT
 );
 
 ALTER TABLE técnico ADD CONSTRAINT técnico_pk PRIMARY KEY ( id_personal );
@@ -164,30 +146,24 @@ ALTER TABLE técnico ADD CONSTRAINT técnico_pkv1 UNIQUE ( id_personal );
 
 CREATE TABLE usar (
     petición_id_peticion      INTEGER NOT NULL,
-    elemento_sw_id_elementosw INTEGER NOT NULL
+    elemento_sw_id_elementosw INTEGER NOT NULL,
+    inicial                   DATE
 );
 
 ALTER TABLE usar ADD CONSTRAINT usar_pk PRIMARY KEY ( petición_id_peticion,
                                                       elemento_sw_id_elementosw );
 
-CREATE TABLE usarv1 (
-    programa_id_elementosw INTEGER NOT NULL,
-    dato_id_elementosw     INTEGER NOT NULL
-);
-
-ALTER TABLE usarv1 ADD CONSTRAINT usarv1_pk PRIMARY KEY ( programa_id_elementosw,
-                                                          dato_id_elementosw );
-
 CREATE TABLE usuario (
-    nombre   VARCHAR2(4000) NOT NULL,
-    password VARCHAR2(4000),
-    rol      VARCHAR2(4000)
+    id_usuario INTEGER NOT NULL,
+    nombre     VARCHAR2(4000) NOT NULL,
+    password   VARCHAR2(4000) NOT NULL,
+    rol        VARCHAR2(4000)
 );
 
 ALTER TABLE usuario
     ADD CHECK ( nombre IN ( 'Comerical', 'Técnico', 'Usuario cliente' ) );
 
-ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( nombre );
+ALTER TABLE usuario ADD CONSTRAINT usuario_pkv1 PRIMARY KEY ( id_usuario );
 
 CREATE TABLE usuario_cliente (
     id_usuario                 INTEGER NOT NULL,
@@ -196,8 +172,7 @@ CREATE TABLE usuario_cliente (
     email                      VARCHAR2(256 CHAR),
     telefono                   NVARCHAR2(9),
     departamento               VARCHAR2(100 CHAR),
-    inactivo                   CHAR(1),
-    usuario_nombre             VARCHAR2(4000) NOT NULL
+    inactivo                   CHAR(1)
 );
 
 ALTER TABLE usuario_cliente ADD CONSTRAINT usuario_pk PRIMARY KEY ( id_usuario );
@@ -211,10 +186,6 @@ ALTER TABLE utiliza ADD CONSTRAINT utiliza_pk PRIMARY KEY ( usuario_id_usuario,
                                                             aplicación_id_aplicacion );
 
 ALTER TABLE aplicación
-    ADD CONSTRAINT aplicación_documento_fk FOREIGN KEY ( documento_id_elementosw )
-        REFERENCES documento ( id_elementosw );
-
-ALTER TABLE aplicación
     ADD CONSTRAINT aplicación_proyecto_fk FOREIGN KEY ( proyecto_id_proyecto )
         REFERENCES proyecto ( id_proyecto );
 
@@ -222,21 +193,19 @@ ALTER TABLE aplicación
     ADD CONSTRAINT aplicación_usuario_fk FOREIGN KEY ( usuario_id_usuario )
         REFERENCES usuario_cliente ( id_usuario );
 
-ALTER TABLE dato
-    ADD CONSTRAINT dato_documento_fk FOREIGN KEY ( documento_id_elementosw )
-        REFERENCES documento ( id_elementosw );
-
-ALTER TABLE dato
-    ADD CONSTRAINT dato_elemento_software_fk FOREIGN KEY ( id_elementosw )
-        REFERENCES elemento_software ( id_elementosw );
-
-ALTER TABLE documento
-    ADD CONSTRAINT documento_elemento_software_fk FOREIGN KEY ( id_elementosw )
-        REFERENCES elemento_software ( id_elementosw );
+ALTER TABLE elemento_software
+    ADD CONSTRAINT elemento_software_llama_a_fk FOREIGN KEY ( llama_a_programa_id,
+                                                              llamado_por_programa_id )
+        REFERENCES llama_a ( programa_id_elementosw,
+                             programa_llamado_id_elementosw );
 
 ALTER TABLE elemento_software
     ADD CONSTRAINT elemento_software_tarea_fk FOREIGN KEY ( tarea_id_tarea )
         REFERENCES tarea ( id_tarea );
+
+ALTER TABLE elemento_software
+    ADD CONSTRAINT elemento_sw_elemento_sw_fk FOREIGN KEY ( elemento_sw_id_elementosw )
+        REFERENCES elemento_software ( id_elementosw );
 
 ALTER TABLE empresa_cliente
     ADD CONSTRAINT empresa_cliente_personal_fk FOREIGN KEY ( personal_id_personal )
@@ -251,16 +220,12 @@ ALTER TABLE formada_por
         REFERENCES elemento_software ( id_elementosw );
 
 ALTER TABLE llama_a
-    ADD CONSTRAINT llama_a_programa_fk FOREIGN KEY ( programa_id_elementosw )
-        REFERENCES programa ( id_elementosw );
-
-ALTER TABLE llama_a
-    ADD CONSTRAINT llama_a_programa_fkv1 FOREIGN KEY ( programa_id_elementosw1 )
-        REFERENCES programa ( id_elementosw );
+    ADD CONSTRAINT llama_a_elemento_software_fk FOREIGN KEY ( programa_id_elementosw )
+        REFERENCES elemento_software ( id_elementosw );
 
 ALTER TABLE personal
-    ADD CONSTRAINT personal_usuario_fk FOREIGN KEY ( usuario_nombre )
-        REFERENCES usuario ( nombre );
+    ADD CONSTRAINT personal_usuario_fk FOREIGN KEY ( id_personal )
+        REFERENCES usuario ( id_usuario );
 
 ALTER TABLE petición
     ADD CONSTRAINT petición_aplicación_fk FOREIGN KEY ( aplicación_id_aplicacion )
@@ -273,14 +238,6 @@ ALTER TABLE petición
 ALTER TABLE petición
     ADD CONSTRAINT petición_usuario_fk FOREIGN KEY ( usuario_id_usuario )
         REFERENCES usuario_cliente ( id_usuario );
-
-ALTER TABLE programa
-    ADD CONSTRAINT programa_documento_fk FOREIGN KEY ( documento_id_elementosw )
-        REFERENCES documento ( id_elementosw );
-
-ALTER TABLE programa
-    ADD CONSTRAINT programa_elemento_software_fk FOREIGN KEY ( id_elementosw )
-        REFERENCES elemento_software ( id_elementosw );
 
 ALTER TABLE proyecto
     ADD CONSTRAINT proyecto_empresa_cliente_fk FOREIGN KEY ( empresa_cliente_id_empresa )
@@ -314,17 +271,9 @@ ALTER TABLE usar
     ADD CONSTRAINT usar_petición_fk FOREIGN KEY ( petición_id_peticion )
         REFERENCES petición ( id_peticion );
 
-ALTER TABLE usarv1
-    ADD CONSTRAINT usarv1_dato_fk FOREIGN KEY ( dato_id_elementosw )
-        REFERENCES dato ( id_elementosw );
-
-ALTER TABLE usarv1
-    ADD CONSTRAINT usarv1_programa_fk FOREIGN KEY ( programa_id_elementosw )
-        REFERENCES programa ( id_elementosw );
-
 ALTER TABLE usuario_cliente
-    ADD CONSTRAINT usuario_cliente_usuario_fk FOREIGN KEY ( usuario_nombre )
-        REFERENCES usuario ( nombre );
+    ADD CONSTRAINT usuario_cliente_usuario_fk FOREIGN KEY ( id_usuario )
+        REFERENCES usuario ( id_usuario );
 
 ALTER TABLE usuario_cliente
     ADD CONSTRAINT usuario_empresa_cliente_fk FOREIGN KEY ( empresa_cliente_id_empresa )
@@ -342,9 +291,9 @@ ALTER TABLE utiliza
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            19
+-- CREATE TABLE                            15
 -- CREATE INDEX                             0
--- ALTER TABLE                             56
+-- ALTER TABLE                             45
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
