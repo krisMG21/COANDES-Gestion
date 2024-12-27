@@ -18,9 +18,9 @@
 | Actor         | Sistema                                                                 |
 |---------------|-------------------------------------------------------------------------|
 | 1. Selecciona la opción "Modificar Elemento de Software".   | 2. Muestra los datos actuales del elemento a modificar. |
-| 3. Modifica el elemento y confirma los cambios. | 4. Pregunta al usuario si quiere cambiar la lista de dependencias.  |
-| 5. Confirma que desea modificar la lista de dependencias. |6. .Verifica los datos, muestra las peticiones en desarrollo en las que el elemento está en la lista inicial y pregunta si quiere modificar dependencias . |
-| 8. Modifica la lista de dependencias (añade, bajas). | 9. Busca las peticiones en desarrollo donde el elementoSW a modificar este en la lista inicial. |
+| 3. Modifica el elemento y confirma los cambios. | 4.Verifica los datos, muestra las peticiones en desarrollo en las que el elemento está en la lista inicial y pregunta si quiere modificar dependencias  .  | 
+| 5. Confirma que desea modificar la lista de dependencias. | 6.Muestra la lista de elementos dependientes y la lista del resto de elementos de la aplicación . |
+| 8. Modifica la lista de dependencias (añade, elminia). | 9. Busca las peticiones en desarrollo donde el elementoSW a modificar este en la lista inicial. |
 | | 10. Para cada petición en desarrollo muestra una nueva lista inicial aplicando los cambios resultantes y la compara con la lista anterior |
 | 11. Confirma los cambios de las listas iniciales.| 12. Muestra aquellas tareas que serán eliminadas y aquellas que no será posible debido a que no estan cerradas. |
 | 13. Confirma las tareas que serán eliminadas. | 14. Para cada petición en desarrollo en las que el elemento está en la lista inicial, genera nueva lista de elementos relacionados con los cambios propuestos,compara con la anterior y genera una lista de elementos que deben desaparecer de los elementos de la petición, incluido el inicial.. |
